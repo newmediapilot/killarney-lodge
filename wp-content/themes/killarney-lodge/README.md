@@ -4,6 +4,7 @@ https://docs.bitnami.com/virtual-machine/apps/wordpress/administration/connect-r
 3.88.90.29
 #Setup:
 ```
+cd wp-content/themes/killarney-lodge/
 npm install
 ```
 #Develop:
@@ -12,5 +13,5 @@ npm start
 ```
 #Deploy
 ```
-npm build
+npm run deploy
 ```

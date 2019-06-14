@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo hello",
-    "start": "gulp watch"
+    "start": "gulp watch",
+    "deploy": "gulp"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/newmediapilot/killarney-lodge#readme",
   "devDependencies": {
+    "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.12.0"
   },
