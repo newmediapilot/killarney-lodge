@@ -1,0 +1,19 @@
+{
+  "name": "killarney-lodge",
+  "version": "1.0.0",
+  "description": "killarney lodge theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newmediapilot/killarney-lodge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newmediapilot/killarney-lodge/issues"
+  },
+  "homepage": "https://github.com/newmediapilot/killarney-lodge#readme"
+}
