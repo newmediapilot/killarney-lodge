@@ -4,7 +4,8 @@
   "description": "killarney lodge theme",
   "main": "index.js",
   "scripts": {
-    "test": "echo hello"
+    "test": "echo hello",
+    "start": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/newmediapilot/killarney-lodge/issues"
   },
-  "homepage": "https://github.com/newmediapilot/killarney-lodge#readme"
+  "homepage": "https://github.com/newmediapilot/killarney-lodge#readme",
+  "devDependencies": {
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
 }
