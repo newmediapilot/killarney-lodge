@@ -7,7 +7,7 @@ https://docs.bitnami.com/virtual-machine/apps/wordpress/administration/connect-r
 cd wp-content/themes/killarney-lodge/
 npm install
 ```
-#Develop:
+#Develop
 ```
 npm start
 ```
@@ -15,3 +15,5 @@ npm start
 ```
 npm run deploy
 ```
+#Sources
+https://github.com/hakimel/reveal.js

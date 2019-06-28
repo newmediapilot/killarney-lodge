@@ -2,11 +2,21 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
+const autoprefixer = require('autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+const postcss = require('gulp-postcss');
 sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
         return gulp.src('./src/scss/all.scss')
             .pipe(sass().on('error', sass.logError))
+            .pipe(sourcemaps.init())
+            .pipe(postcss(
+                [
+                    autoprefixer()
+                ]
+            ))
+            .pipe(sourcemaps.write('.'))
             .pipe(gulp.dest('./dist'));
     }
 );
