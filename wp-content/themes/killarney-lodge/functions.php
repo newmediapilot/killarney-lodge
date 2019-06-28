@@ -14,3 +14,5 @@ function load_javascripts()
 
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 add_action('wp_enqueue_scripts', 'load_javascripts');
+
+add_theme_support('menus');
