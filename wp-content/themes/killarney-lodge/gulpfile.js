@@ -21,12 +21,12 @@ gulp.task('sass', function () {
     }
 );
 
-gulp.task('javascript', function () {
+gulp.task('js', function () {
         return gulp.src([
             /**
              * node module scripts here
              */
-            'src/js/main.js'
+            './src/js/main.js'
         ], {sourcemaps: true})
             .pipe(concat('all.js'))
             .pipe(gulp.dest('./dist', {sourcemaps: true}))
@@ -34,9 +34,9 @@ gulp.task('javascript', function () {
 );
 
 gulp.task('watch', function () {
-    gulp.series(['javascript', 'sass']);
+    gulp.series(['js', 'sass']);
     gulp.watch('./src/scss/*.*', gulp.series('sass'));
-    gulp.watch('./src/js/*.*', gulp.series('javascript'));
+    gulp.watch('./src/js/*.*', gulp.series('js'));
 });
 
-gulp.task('default', gulp.series(['javascript', 'sass']));
+gulp.task('default', gulp.series(['js', 'sass']));

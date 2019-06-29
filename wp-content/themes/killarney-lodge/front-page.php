@@ -1,12 +1,12 @@
-<?php get_header();?>
-<!-- begin front-page.php -->
-<h1>
-    <?php the_title()?>
-</h1>
-<p>
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <? the_content(); ?>
-    <?php endwhile; endif; ?>
-</p>
-<!-- end front-page.php -->
-<?php get_footer();?>
+<?php $homepage = get_page_by_path('homepage_main'); ?>
+<?php $homepage_section_1 = get_page_by_path('homepage_section_1'); ?>
+<?php $homepage_section_2 = get_page_by_path('homepage_section_2'); ?>
+<?php $homepage_section_3 = get_page_by_path('homepage_section_3'); ?>
+
+<?php get_header(); ?>
+
+    <div class="container">
+        <?php echo $homepage->post_title ?>
+    </div>
+
+<?php get_footer(); ?>
