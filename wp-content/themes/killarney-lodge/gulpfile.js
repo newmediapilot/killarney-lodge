@@ -26,6 +26,8 @@ gulp.task('js', function () {
             /**
              * node module scripts here
              */
+            './node_modules/jquery/dist/jquery.js',
+            './src/js/vendor/*.js',
             './src/js/main.js'
         ], {sourcemaps: true})
             .pipe(concat('all.js'))
