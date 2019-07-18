@@ -12,6 +12,11 @@ function load_javascripts()
     wp_enqueue_script('killarney-javascript');
 }
 
+function add_meta_tags() {
+    echo '<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">';
+}
+
+add_action('wp_head', 'add_meta_tags');
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 add_action('wp_enqueue_scripts', 'load_javascripts');
 
