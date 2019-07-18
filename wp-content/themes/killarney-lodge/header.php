@@ -1,11 +1,14 @@
 <!-- begin header.php -->
 
 <!DOCTYPE html>
+
 </html>
 <head>
     <?PHP wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+
+<!-- begin top-menu -->
 
 <header class="sticky-top">
     <?php
@@ -17,5 +20,7 @@
     )
     ?>
 </header>
+
+<!-- end top-menu -->
 
 <!-- end header.php -->

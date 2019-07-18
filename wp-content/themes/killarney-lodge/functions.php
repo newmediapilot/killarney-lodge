@@ -22,3 +22,37 @@ register_nav_menus(
         'top-menu' => __('Top Menu', 'theme')
     )
 );
+/*
+ * get post by slug
+ */
+function wp_get_post_by_slug($slug, $post_type = 'post', $unique = true)
+{
+    $args = array(
+        'name' => $slug,
+        'post_type' => $post_type,
+        'post_status' => 'publish',
+        'posts_per_page' => 1
+    );
+    $my_posts = get_posts($args);
+    if ($my_posts) {
+        if ($unique) {
+            return $my_posts[0];
+        } else {
+            return $my_posts;
+        }
+    }
+    return false;
+}
+
+/**
+ * get page children
+ */
+function wp_get_page_and_children($slug)
+{
+    $the_page = wp_get_post_by_slug($slug, 'page');
+    return get_pages(array('child_of' => $the_page->ID, 'sort_column' => 'menu_order', 'sort_order' => 'ASC'));
+}
+
+/**
+ * end functions.php
+ */
