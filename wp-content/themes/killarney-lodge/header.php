@@ -7,20 +7,7 @@
     <?PHP wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
-<!-- begin top-menu -->
-
-<header class="sticky-top">
-    <?php
-    wp_nav_menu(
-        array(
-            'theme_location' => 'top-menu',
-            'menu_class' => 'top-menu'
-        )
-    )
-    ?>
-</header>
-
-<!-- end top-menu -->
-
+<div style="word-break: break-all">
+    <?php include 'top-nav-menu.php'; ?>
+</div>
 <!-- end header.php -->
