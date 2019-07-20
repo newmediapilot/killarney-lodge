@@ -1,0 +1,117 @@
+$nav-height-desktop: 80px;
+
+.kl-navbar {
+  position: relative;
+  height: $nav-height-desktop;
+  font-size: 14px;
+
+  .kl-navbar-wrapper {
+    background-color: rgba(0, 0, 0, .5);
+    padding: $spacer/2;
+    width: 100%;
+    height: $nav-height-desktop;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+
+    .kl-navbar--holder {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+
+      .kl-navbar--menu {
+        position: absolute;
+        left: $spacer;
+        top: 0;
+
+        img {
+          height: 60px;
+        }
+      }
+
+      // .kl-navbar--menu
+
+      .kl-navbar--items {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+
+        ul {
+          list-style: none;
+          display: flex;
+          margin: 0;
+          padding: 0;
+
+          li {
+            margin-right: 15px;
+
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+
+      // .kl-navbar--items
+
+      .kl-navbar--phone {
+        position: absolute;
+        right: $spacer;
+        top: 0;
+
+        a {
+
+          text-decoration: inherit;
+          color: inherit;
+          position: relative;
+
+          .kl-navbar--phone-number {
+            color: white;
+            letter-spacing: 1px;
+            padding-bottom: 5px;
+            text-shadow: 1px 1px black;
+          }
+
+          .kl-navbar--phone-title {
+
+            box-shadow: 0px 0px 0px 2px #723232;
+            color: #5b0000;
+            background-color: white;
+            letter-spacing: 2px;
+            display: inline-block;
+            padding: 0px 6px;
+            position: relative;
+
+            &:after {
+              top: 100%;
+              left: 50%;
+              border: solid transparent;
+              content: " ";
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+              border-color: solid rgba(255, 255, 255, 0);
+              border-top-color: #ffffff;
+              border-width: 5px;
+              margin-left: -5px;
+            }
+          }
+
+          //.kl-navbar--phone-title
+        }
+
+        // a
+      }
+
+      // .kl-navbar--phone-tag
+    }
+
+    // .kl-navbar--holder
+  }
+
+  // .kl-navbar-wrapper
+}
