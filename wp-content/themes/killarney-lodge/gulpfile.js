@@ -37,8 +37,8 @@ gulp.task('js', function () {
 
 gulp.task('watch', function () {
     gulp.series(['js', 'sass']);
-    gulp.watch('./src/scss/*.*', gulp.series('sass'));
-    gulp.watch('./src/js/*.*', gulp.series('js'));
+    gulp.watch('./src/scss/**/*.*', gulp.series('sass'));
+    gulp.watch('./src/js/**/*.*', gulp.series('js'));
 });
 
 gulp.task('default', gulp.series(['js', 'sass']));

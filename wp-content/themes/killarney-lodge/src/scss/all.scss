@@ -1,3 +1,5 @@
+@import './incudes/masthead_carousel.scss';
+@import './incudes/_top_nav.scss';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 body {
@@ -36,7 +38,7 @@ H1, H2, H3, H4, H5, H6 {
 
 .kl-text,
 .kl-img {
-  margin-bottom: $spacer;
+  margin-bottom: $spacer*2;
 }
 
 .kl-text {
@@ -75,7 +77,7 @@ H1, H2, H3, H4, H5, H6 {
 
 .kl-img {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
 
   img {
     width: 100%;
