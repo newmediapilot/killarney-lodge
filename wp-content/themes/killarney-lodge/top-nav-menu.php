@@ -6,10 +6,28 @@
 <?php $reservation_menu = wp_get_nav_menu_items('Reservation Menu'); ?>
 
 <nav class="kl-navbar">
+    <!-- book now -->
+    <a href="<?php echo $reservation_menu[0]->url ?>"
+       target="_blank"
+       title="<?php echo $reservation_menu[0]->title ?>"
+       class="kl-navbar--book-now">
+        <span>
+        B<br>
+        O<br>
+        O<br>
+        K<br>
+        &nbsp;<br>
+        H<br>
+        E<br>
+        R<br>
+        E</span>
+    </a>
+    <!-- end book now -->
+    <!-- top-nav-desktop -->
     <div class="kl-navbar-wrapper">
         <div class="kl-navbar--holder">
             <div class="kl-navbar--menu">
-                <a href="<?php echo $home_menu[0]->post_url ?>"
+                <a href="<?php echo $home_menu[0]->url ?>"
                    title="<?php echo $home_menu[0]->title ?>">
                     <img src="/wp-content/themes/killarney-lodge/res/LOGO.png"
                          alt="<?php echo $home_menu[0]->title ?>">
@@ -33,7 +51,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div><!-- end top-nav-desktop -->
 </nav>
 
 <!-- end top-nav-menu -->

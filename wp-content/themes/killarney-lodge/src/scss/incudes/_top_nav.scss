@@ -4,6 +4,50 @@ $nav-height-desktop: 80px;
   position: relative;
   font-size: 14px;
 
+  .kl-navbar--book-now {
+    box-shadow: 0px 0px 0px 2px #723232;
+    color: #5b0000;
+    background-color: white;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 3px;
+    line-height: 13px;
+    font-weight: bold;
+    position: fixed;
+    z-index: 2;
+    left: 5px;
+    top: 200px;
+    @media(max-width: 767px) {
+      top: 40%;
+    }
+
+    &:hover {
+      text-decoration: inherit;
+    }
+
+    $arrow-top-location: 54px;
+
+    &:after {
+      top: $arrow-top-location+3px;
+      left: 97%;
+      content: "";
+      position: absolute;
+      border: solid transparent;
+      border-left-color: #ffffff;
+      border-width: 6px;
+    }
+
+    &:before {
+      top: $arrow-top-location;
+      left: 100%;
+      content: "";
+      position: absolute;
+      border: solid transparent;
+      border-left-color: #5b0000;
+      border-width: 8px;
+    }
+  }
+
   .kl-navbar-wrapper {
     background-color: rgba(0, 0, 0, .5);
     padding: $spacer/2;
@@ -85,18 +129,18 @@ $nav-height-desktop: 80px;
             position: relative;
 
             &:after {
-              top: 100%;
+              top: 95%;
               left: 50%;
               content: "";
               position: absolute;
               border: solid transparent;
               border-top-color: #ffffff;
-              border-width: 5px;
-              margin-left: -5px;
+              border-width: 7px;
+              margin-left: -7px;
             }
 
             &:before {
-              top: 100%;
+              top: 101%;
               left: 50%;
               content: "";
               position: absolute;
