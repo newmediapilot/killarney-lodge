@@ -67,7 +67,7 @@ foreach ($footer_menu_parents as $menu_item_parent) {
         <div class="col-12 col-md-12 col-lg-9">
             <div class="row">
                 <?php foreach ($footer_menu_parents as $footer_menu_parent) { ?>
-                    <div class="kl-footer--list col-6 col-md-2 col-lg-2">
+                    <div class="kl-footer--list col-6 col-md-2 col-lg-2 col-xl-auto">
                         <ul>
                             <li>
                                 <a href="<?php echo $footer_menu_parent->url ?>"

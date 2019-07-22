@@ -7,9 +7,7 @@ $blocks = wp_get_page_and_children('killarney-lodge');
     <!-- -->
     <!-- -->
     <div class="container">
-        <div class="kl-masthead">
-            <?php echo $masthead->post_content; ?>
-        </div>
+        <?php echo do_shortcode('[wonderplugin_slider id=1]'); ?>
     </div>
     <div class="container">
         <div class="row">
