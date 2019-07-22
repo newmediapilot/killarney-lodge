@@ -1,8 +1,16 @@
-$nav-height-desktop: 80px;
+$nav-height-desktop: 5rem;
 
-.kl-navbar {
+.kl-navbar--mobile{
+
+}
+
+.kl-navbar--desktop {
   position: relative;
   font-size: 14px;
+
+  @media(max-width: 935px) {
+    height: $nav-height-desktop+$spacer;
+  }
 
   .kl-navbar--book-now {
     box-shadow: 0px 0px 0px 2px #723232;
@@ -67,6 +75,13 @@ $nav-height-desktop: 80px;
       .kl-navbar--menu {
         position: absolute;
         left: $spacer;
+
+        @media (max-width: 482px) {
+          left: 0;
+          width: 180px;
+          overflow: hidden;
+        }
+
         top: 0;
 
         img {
@@ -77,6 +92,12 @@ $nav-height-desktop: 80px;
       // .kl-navbar--menu
 
       .kl-navbar--items {
+
+        @media(max-width: 935px) {
+          display: none;
+          visibility: hidden;
+        }
+
         color: white;
         display: flex;
         justify-content: center;

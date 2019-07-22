@@ -5,7 +5,15 @@
 <?php $phone_menu = wp_get_nav_menu_items('Phone Menu'); ?>
 <?php $reservation_menu = wp_get_nav_menu_items('Reservation Menu'); ?>
 
-<nav class="kl-navbar">
+<nav class="kl-navbar--mobile">
+    <div class="kl-navbar--mobile--wrapper">
+        <div class="kl-navbar--mobile--trigger">
+
+        </div>
+    </div>
+</nav>
+
+<nav class="kl-navbar--desktop">
     <!-- book now -->
     <a href="<?php echo $reservation_menu[0]->url ?>"
        target="_blank"
