@@ -9,7 +9,7 @@ $nav-height-desktop: 5rem;
   font-size: 14px;
 
   @media(max-width: 935px) {
-    height: $nav-height-desktop+$spacer;
+    height: $nav-height-desktop;
   }
 
   .kl-navbar--book-now {
