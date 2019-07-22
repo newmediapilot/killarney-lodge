@@ -7,7 +7,7 @@
     <?PHP wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div style="word-break: break-all">
-    <?php include 'top-nav-menu.php'; ?>
-</div>
+
+<?php include 'top-nav-menu.php'; ?>
+
 <!-- end header.php -->

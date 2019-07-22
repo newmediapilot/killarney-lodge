@@ -1,5 +1,7 @@
 <!-- begin footer -->
-<?php wp_footer();?>
+
+<?php include 'bottom-nav-menu.php'; ?>
+
 </body>
 </html>
 <!-- end footer -->
