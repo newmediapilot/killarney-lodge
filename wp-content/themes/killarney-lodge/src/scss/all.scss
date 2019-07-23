@@ -2,6 +2,7 @@
 @import './incudes/masthead_carousel.scss';
 @import './incudes/_top_nav.scss';
 @import './incudes/_bottom_nav.scss';
+@import './incudes/_video.scss';
 
 body {
   font-family: Verdana, sans-serif;
@@ -40,6 +41,9 @@ H1, H2, H3, H4, H5, H6 {
 .kl-text,
 .kl-img {
   margin-bottom: $spacer*2;
+  @media (max-width: 482px) {
+    margin-bottom: $spacer*2;
+  }
 }
 
 .kl-text {
