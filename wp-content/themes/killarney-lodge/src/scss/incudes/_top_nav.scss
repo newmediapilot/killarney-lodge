@@ -86,6 +86,12 @@ $nav-height-desktop: 5rem;
         position: absolute;
         left: $spacer;
 
+        @media(max-width:319px){
+          left:0;
+          transform: scale(.85);
+          transform-origin: top left;
+        }
+
         @media (max-width: 482px) {
           left: 0;
           width: 180px;
@@ -135,6 +141,12 @@ $nav-height-desktop: 5rem;
         position: absolute;
         right: $spacer;
         top: 0;
+
+        @media(max-width:319px){
+          right:0;
+          transform: scale(.75);
+          transform-origin: top right;
+        }
 
         a {
 
