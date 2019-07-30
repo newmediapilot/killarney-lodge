@@ -22,7 +22,7 @@ $nav-height-desktop: 5rem;
     line-height: 13px;
     font-weight: bold;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     left: 5px;
     top: 200px;
     @media(max-width: 767px) {
@@ -62,7 +62,7 @@ $nav-height-desktop: 5rem;
     width: 100%;
     height: $nav-height-desktop;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     right: 0;
 

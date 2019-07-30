@@ -1,4 +1,19 @@
 .kl-masthead {
   width: 100%;
   background-color: black;
+  position:relative;
+  &:before
+  {
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 33%;
+    position: absolute;
+    z-index: 1;
+    background: url(/wp-content/themes/killarney-lodge/res/relaxExploreEnjoy.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
 }
