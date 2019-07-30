@@ -14,23 +14,6 @@
 </nav>
 
 <nav class="kl-navbar--desktop">
-    <!-- book now -->
-    <a href="<?php echo $reservation_menu[0]->url ?>"
-       target="_blank"
-       title="<?php echo $reservation_menu[0]->title ?>"
-       class="kl-navbar--book-now">
-        <span>
-        B<br>
-        O<br>
-        O<br>
-        K<br>
-        &nbsp;<br>
-        H<br>
-        E<br>
-        R<br>
-        E</span>
-    </a>
-    <!-- end book now -->
     <!-- top-nav-desktop -->
     <div class="kl-navbar-wrapper">
         <div class="kl-navbar--holder">
@@ -60,6 +43,23 @@
             </div>
         </div>
     </div><!-- end top-nav-desktop -->
+    <!-- book now -->
+    <a href="<?php echo $reservation_menu[0]->url ?>"
+       target="_blank"
+       title="<?php echo $reservation_menu[0]->title ?>"
+       class="kl-navbar--book-now">
+        <span>
+        B<br>
+        O<br>
+        O<br>
+        K<br>
+        &nbsp;<br>
+        H<br>
+        E<br>
+        R<br>
+        E</span>
+    </a>
+    <!-- end book now -->
 </nav>
 
 <!-- end top-nav-menu -->
