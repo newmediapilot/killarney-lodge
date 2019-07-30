@@ -6,8 +6,8 @@ $blocks = wp_get_page_and_children('park-activities');
     <!-- -->
     <!-- -->
     <!-- -->
-    <div class="kl-masthead">
-        <?php echo do_shortcode('[wonderplugin_slider id=1]'); ?>
+    <div class="kl-masthead" tabindex="-1">
+        <?php echo do_shortcode('[wonderplugin_slider id=2]'); ?>
     </div>
     <div class="container">
         <div class="row">
