@@ -1,12 +1,12 @@
 <?php
-$blocks = wp_get_page_and_children('cabins-and-rates');
+$blocks = wp_get_page_and_children('rates');
 ?>
 <?php get_header() ?>
     <!-- -->
     <!-- -->
     <!-- -->
-    <div class="kl-masthead">
-        cabins and rates selector
+    <div class="kl-masthead" tabindex="-1">
+        <?php echo do_shortcode('[wonderplugin_slider id=1]'); ?>
     </div>
     <div class="container">
         <div class="row">
