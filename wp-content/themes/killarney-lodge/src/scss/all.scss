@@ -76,6 +76,9 @@ H1, H2, H3, H4, H5, H6 {
   pricing table
    */
   &.kl-text--table {
+
+    justify-content: flex-start;
+
     table {
       margin-bottom: $spacer;
 
