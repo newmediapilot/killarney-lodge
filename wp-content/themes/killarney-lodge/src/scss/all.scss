@@ -67,9 +67,51 @@ H1, H2, H3, H4, H5, H6 {
     }
   }
 
-  h6{
+  h6 {
     font-family: Georgia, serif;
-    color:#333;
+    color: #333;
+  }
+
+  /**
+  pricing table
+   */
+  &.kl-text--table {
+    table {
+      margin-bottom: $spacer;
+
+      tr {
+        border-bottom: $spacer solid rgba(0, 0, 0, 0);
+
+        td {
+          vertical-align: top;
+
+          &:nth-child(1) {
+            width: 75%;
+          }
+
+          &:nth-child(2) {
+            padding: 0 $spacer;
+            background-color: #e5e6da;
+          }
+
+          &:nth-child(3) {
+            padding: 0 $spacer;
+            background-color: #fff;
+          }
+
+          &:nth-child(4) {
+            padding: 0 $spacer;
+            background-color: #f6e4db;;
+          }
+        }
+        
+        &:first-child {
+          td {
+            padding-top: $spacer;
+          }
+        }
+      }
+    }
   }
 
   /**
@@ -91,10 +133,27 @@ H1, H2, H3, H4, H5, H6 {
   display: flex;
   align-items: flex-start;
   position: relative;
+  flex-direction: column;
 
+  /**
+  href map with links
+   */
   &.kl-img--map {
     a {
       position: absolute;
+    }
+  }
+
+  /**
+  multiple images stacked
+   */
+  &.kl-img--stack {
+    img {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 2*$spacer;
+      }
     }
   }
 
