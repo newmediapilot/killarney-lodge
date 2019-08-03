@@ -18,8 +18,8 @@ foreach ($footer_menu_parents as $menu_item_parent) {
 <footer class="container kl-footer">
     <div class="row">
         <!-- social items -->
-        <div class="kl-footer--social col-12 col-md-12 col-lg-3">
-            <div class="row">
+        <div class="kl-footer--social col-12 col-lg-3">
+            <div class="row m-0">
                 <div class="col-2 col-md-2 col-lg-6">
                     <a href="<?php echo $social_menu[0]->url ?>"
                        target="_blank"
