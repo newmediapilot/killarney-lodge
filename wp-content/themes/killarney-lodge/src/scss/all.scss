@@ -96,25 +96,52 @@ H1, H2, H3, H4, H5, H6 {
           &:nth-child(2) {
             padding: 0 $spacer;
             background-color: #e5e6da;
+            text-align: center;
           }
 
           &:nth-child(3) {
             padding: 0 $spacer;
             background-color: #fff;
+            text-align: center;
           }
 
           &:nth-child(4) {
             padding: 0 $spacer;
-            background-color: #f6e4db;;
+            background-color: #f6e4db;
+            text-align: center;
           }
         }
-        
+
         &:first-child {
           td {
             padding-top: $spacer;
           }
         }
       }
+
+      /**
+      tighten table  for iphone 4
+       */
+      @media (max-width: 396px) {
+        tr {
+          td {
+            &:nth-child(1) {
+              font-size: 75%;
+              line-height: 1;
+            }
+          }
+
+          td {
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+              padding-left: $spacer/2;
+              padding-right: $spacer/2;
+            }
+          }
+        }
+      }
+
     }
   }
 
