@@ -1,8 +1,49 @@
-.kl-cabins{
-  .kl-cabins--image{
+.kl-cabins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('/wp-content/themes/killarney-lodge/res/cabin-map/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  .kl-cabins--image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      margin-top: 85px;
+      width: 50%;
+      @media(max-width: 935px) {
+        margin-top: 0;
+        width: 85%;
+      }
+    }
   }
-  .kl-cabins--selectors{
 
+  .kl-cabins--selectors {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+
+    img {
+      cursor: pointer;
+      width: 110px;
+      @media(max-width: 962px) {
+        width: 80px;
+      }
+      @media(max-width: 736px) {
+        width: 127px;
+      }
+      @media(max-width: 373px) {
+        width: 69px;
+      }
+
+      margin-left: $spacer/2;
+      margin-right: $spacer/2;
+      margin-bottom: $spacer;
+    }
   }
 }
