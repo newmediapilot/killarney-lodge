@@ -6,7 +6,14 @@ $blocks = wp_get_page_and_children('rates');
     <!-- -->
     <!-- -->
     <div class="kl-masthead" tabindex="-1">
-        <?php echo do_shortcode('[wonderplugin_slider id=1]'); ?>
+        <div class="kl-cabins">
+            <div class="kl-cabins--image">
+                <!-- populated by JS -->
+            </div>
+            <div class="kl-cabins--selectors">
+                <!-- populated by JS -->
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="row">
