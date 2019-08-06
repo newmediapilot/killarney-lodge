@@ -22,16 +22,14 @@ gulp.task('sass', function () {
 );
 
 gulp.task('js', function () {
-        return gulp.src([
-            /**
-             * node module scripts here
-             */
-            './node_modules/jquery/dist/jquery.js',
-            './src/js/vendor/*.js',
-            './src/js/main.js'
-        ], {sourcemaps: true})
+        return gulp.src(
+            [
+                './src/js/vendor/**/*.js',
+                './src/js/main.js'
+            ]
+        )
             .pipe(concat('all.js'))
-            .pipe(gulp.dest('./dist', {sourcemaps: true}))
+            .pipe(gulp.dest('./dist'))
     }
 );
 
