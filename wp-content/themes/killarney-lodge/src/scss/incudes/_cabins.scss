@@ -13,9 +13,9 @@
     img {
       margin-top: 85px;
       width: 60%;
-      @media(max-width: 935px) {
+      object-fit: contain; // FF, Safari
+      @media (max-width: 935px) {
         margin-top: 0;
-        width: 85%;
       }
     }
   }
