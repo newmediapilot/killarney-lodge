@@ -2,6 +2,7 @@ wp-config.php
 .idea/
 wp-content/themes/killarney-lodge/node_modules/
 wp-content/themes/killarney-lodge/dist/
-wp-content/uploads
 wp-content/themes/php-info.php
+wp-content/uploads/
 wp-content/plugins/
+wp-content/cache/
