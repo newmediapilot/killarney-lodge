@@ -23,29 +23,28 @@
      */
     var holder = $('.kl-cabins--image');
     var map = $('<img>');
-    holder.append(map);
+
     /**
      * click action
      */
     function setImage(index) {
         var image = images[index];
-        holder.css({
-            'background-image': [
+        map.attr(
+            'src',
+            [
                 root,
                 image.panel,
                 '.jpg'
             ].join('')
-        });
+        );
     }
+
     /**
      * create selectors
      */
     for (var i = 0; i < images.length; i++) {
         var container = $('.kl-cabins--selectors');
         var image = $('<img>');
-        image.css({
-            'cursor': 'pointer'
-        });
         image.attr('src', [
                 root,
                 images[i].button,
@@ -63,6 +62,7 @@
      * setup holder
      */
     setImage(0);
+    holder.append(map);
 
 })(jQuery);
 
