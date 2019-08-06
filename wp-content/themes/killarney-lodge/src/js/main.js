@@ -44,18 +44,20 @@
      */
     for (var i = 0; i < images.length; i++) {
         var container = $('.kl-cabins--selectors');
+        var source = [
+            root,
+            images[i].button,
+            '.jpg'
+        ].join('');
         var image = $('<img>');
-        image.attr('src', [
-                root,
-                images[i].button,
-                '.jpg'
-            ].join('')
-        );
+        image.attr('src', source);
         (function (index) {
-            image.bind('click mouseover',(function () {
+            image.bind('click mouseover', (function () {
                 setImage(index)
-            })
+            }));
         })(i);
+        var preload = new Image();
+        preload.src = source;
         container.append(image);
     }
     /**
