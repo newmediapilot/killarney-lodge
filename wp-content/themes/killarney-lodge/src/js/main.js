@@ -54,7 +54,7 @@
         (function (index) {
             image.bind('click mouseover',(function () {
                 setImage(index)
-            })
+            }));
         })(i);
         container.append(image);
     }
