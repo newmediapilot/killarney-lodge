@@ -52,9 +52,9 @@
             ].join('')
         );
         (function (index) {
-            image.click(function () {
+            image.bind('click mouseover',(function () {
                 setImage(index)
-            });
+            })
         })(i);
         container.append(image);
     }
