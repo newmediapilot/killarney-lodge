@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo hello",
     "start": "gulp watch",
-    "deploy": "gulp"
+    "deploy": "git fetch; git pull; gulp"
   },
   "repository": {
     "type": "git",
