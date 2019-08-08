@@ -149,7 +149,6 @@ H1, H2, H3, H4, H5, H6 {
   special paragraph with custom breaks
    */
   &.kl-text--break-hide {
-    text-align: center;
     @media (max-width: 992px) {
       text-align: left;
       br {
