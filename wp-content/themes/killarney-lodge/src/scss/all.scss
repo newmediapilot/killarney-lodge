@@ -178,9 +178,7 @@ H1, H2, H3, H4, H5, H6 {
   multiple images stacked
    */
   &.kl-img--stack {
-    img {
-      display: block;
-
+    .wp-block-image {
       &:not(:last-child) {
         margin-bottom: 2*$spacer;
       }
@@ -189,9 +187,9 @@ H1, H2, H3, H4, H5, H6 {
 
   .wp-block-image {
     width: 100%;
+    img {
+      width: 100%;
+    }
   }
 
-  img {
-    width: 100%;
-  }
 }
