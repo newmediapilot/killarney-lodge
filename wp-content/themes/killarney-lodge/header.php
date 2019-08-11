@@ -2,8 +2,9 @@
 
 <!DOCTYPE html>
 
-</html>
+</html lang="en">
 <head>
+    <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
     <?PHP wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
