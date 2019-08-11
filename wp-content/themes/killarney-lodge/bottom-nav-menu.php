@@ -21,7 +21,8 @@ foreach ($footer_menu_parents as $menu_item_parent) {
         <div class="kl-footer--social col-12 col-lg-3">
             <div class="row m-0">
                 <div class="col-2 col-md-2 col-lg-6">
-                    <a href="<?php echo $social_menu[0]->url ?>"
+                    <a rel="noreferrer nofollow"
+                       href="<?php echo $social_menu[0]->url ?>"
                        target="_blank"
                        title="<?php echo $social_menu[0]->title ?>">
                         <img alt="<?php echo $social_menu[0]->title ?>"
@@ -29,7 +30,8 @@ foreach ($footer_menu_parents as $menu_item_parent) {
                     </a>
                 </div>
                 <div class="col-2 col-md-2 col-lg-6">
-                    <a href="<?php echo $social_menu[1]->url ?>"
+                    <a rel="noreferrer nofollow"
+                       href="<?php echo $social_menu[1]->url ?>"
                        target="_blank"
                        title="<?php echo $social_menu[1]->title ?>">
                         <img alt="<?php echo $social_menu[1]->title ?>"
@@ -37,7 +39,8 @@ foreach ($footer_menu_parents as $menu_item_parent) {
                     </a>
                 </div>
                 <div class="col-2 col-md-2 col-lg-6">
-                    <a href="<?php echo $social_menu[2]->url ?>"
+                    <a rel="noreferrer nofollow"
+                       href="<?php echo $social_menu[2]->url ?>"
                        target="_blank"
                        title="<?php echo $social_menu[2]->title ?>">
                         <img alt="<?php echo $social_menu[2]->title ?>"
@@ -45,7 +48,8 @@ foreach ($footer_menu_parents as $menu_item_parent) {
                     </a>
                 </div>
                 <div class="col-2 col-md-2 col-lg-6">
-                    <a href="<?php echo $social_menu[3]->url ?>"
+                    <a rel="noreferrer nofollow"
+                       href="<?php echo $social_menu[3]->url ?>"
                        target="_blank"
                        title="<?php echo $social_menu[3]->title ?>">
                         <img alt="<?php echo $social_menu[3]->title ?>"
@@ -53,7 +57,8 @@ foreach ($footer_menu_parents as $menu_item_parent) {
                     </a>
                 </div>
                 <div class="col-2 col-md-2 col-lg-12">
-                    <a href="<?php echo $social_menu[4]->url ?>"
+                    <a rel="noreferrer nofollow"
+                       href="<?php echo $social_menu[4]->url ?>"
                        target="_blank"
                        title="<?php echo $social_menu[4]->title ?>">
                         <img alt="<?php echo $social_menu[4]->title ?>"
