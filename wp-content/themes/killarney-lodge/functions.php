@@ -31,6 +31,8 @@ add_action('wp_enqueue_scripts', 'load_javascripts');
 
 add_theme_support('menus');
 
+add_filter( 'widget_text', 'do_shortcode' );
+
 register_nav_menus(
     array(
         'top-menu' => __('Top Menu', 'theme')
@@ -92,6 +94,24 @@ function disable_emojis_tinymce( $plugins ) {
         return array();
     }
 }
+
+/**
+ * Function to use a template for a specific post category
+ */
+function check_for_category_single_template( $t )
+{
+    foreach( (array) get_the_category() as $cat )
+    {
+        if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php";
+        if($cat->parent)
+        {
+            $cat = get_the_category_by_ID( $cat->parent );
+            if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php";
+        }
+    }
+    return $t;
+}
+add_filter('single_template', 'check_for_category_single_template');
 
 /**
  * end functions.php
