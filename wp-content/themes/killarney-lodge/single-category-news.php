@@ -1,1 +1,1 @@
-news
+single-category-news.php
