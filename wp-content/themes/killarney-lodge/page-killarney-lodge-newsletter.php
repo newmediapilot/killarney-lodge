@@ -5,9 +5,9 @@ $master = wp_get_post_by_slug($post_slug, 'page');
 $blocks = wp_get_page_and_children($post_slug);
 ?>
 <?php get_header() ?>
-    <!-- -->
-    <!-- -->
-    <!-- -->
+    <!-- begin page-killarney-lodge-newsletter.php -->
+    <!-- begin page-killarney-lodge-newsletter.php -->
+    <!-- begin page-killarney-lodge-newsletter.php -->
     <div class="kl-masthead" tabindex="-1">
         <?php
         $sliderId = get_metadata('post', $master->ID, 'sliderId', true);
@@ -66,7 +66,7 @@ $blocks = wp_get_page_and_children($post_slug);
             </div>
         </div>
     </div>
-    <!-- -->
-    <!-- -->
-    <!-- -->
+    <!-- end page-killarney-lodge-newsletter.php -->
+    <!-- end page-killarney-lodge-newsletter.php -->
+    <!-- end page-killarney-lodge-newsletter.php -->
 <?php get_footer() ?>
