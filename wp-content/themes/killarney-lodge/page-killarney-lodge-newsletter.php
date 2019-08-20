@@ -1,6 +1,6 @@
 <?php
 global $post;
-$post_slug = 'newsletter';
+$post_slug = 'killarney-lodge-newsletter';
 $master = wp_get_post_by_slug($post_slug, 'page');
 $blocks = wp_get_page_and_children($post_slug);
 ?>
@@ -36,7 +36,7 @@ $blocks = wp_get_page_and_children($post_slug);
                         <ul class="newsletter-listing">
                             <?php
                             /*
-                             * get posts that are category 'newsletter'
+                             * get posts that are category 'killarney-lodge-newsletter'
                              */
                             $newsletter_args = array(
                                 'category_name' => 'newsletter',
