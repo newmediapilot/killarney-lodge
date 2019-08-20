@@ -1,5 +1,5 @@
 .gallery-images {
-  padding-top: 6rem !important;
+  padding-top: 5rem !important;
   background: #1c1c1c;
   max-width: 100%;
   @media (max-width: 935px) {
@@ -32,9 +32,12 @@
 .gallery-videos {
   max-width: 100%;
   background: #1c1c1c;
+  padding-bottom: 7rem;
 }
 
 .gallery-tours {
   max-width: 100%;
   background: #1c1c1c;
+  padding-bottom: 7rem;
+  margin-bottom: 2rem;
 }

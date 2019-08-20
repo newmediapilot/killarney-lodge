@@ -11,6 +11,7 @@ body {
   font-family: Verdana, sans-serif;
   font-size: 14px;
   width: 100%;
+  color: #151515;
 }
 
 H1, H2, H3, H4, H5, H6 {
@@ -24,7 +25,7 @@ H1, H2, H3, H4, H5, H6 {
   justify-content: center;
   padding: $spacer;
   font-weight: bold;
-  color: #848484;
+  color: #6E6E6E;
 
   H1 {
     font-weight: bold;
@@ -72,7 +73,7 @@ H1, H2, H3, H4, H5, H6 {
 
   h6 {
     font-family: Georgia, serif;
-    color: #848484;
+    color: #6E6E6E;
   }
 
   /**
@@ -159,9 +160,10 @@ H1, H2, H3, H4, H5, H6 {
       }
     }
   }
-  
+
   .wp-block-image {
     width: 100%;
+
     img {
       width: 100%;
     }
@@ -196,6 +198,7 @@ H1, H2, H3, H4, H5, H6 {
 
   .wp-block-image {
     width: 100%;
+
     img {
       width: 100%;
     }
