@@ -1,30 +1,40 @@
 .gallery-images {
-  position:relative;
   padding-top: 6rem !important;
+  background: #1c1c1c;
+  max-width: 100%;
   @media (max-width: 935px) {
     padding-top: 0rem !important;
   }
-  padding-bottom: 6rem !important;
-  &:before{
+}
+
+.gallery-divider {
+  position: relative;
+  height: 5rem;
+  background: #1c1c1c;
+  max-width: 100%;
+
+  &:before {
     left: 0;
-    bottom: 2rem;
+    top: 4%;
     content: '';
     width: 100%;
-    height: 33%;
+    height: 100%;
     position: absolute;
     pointer-events: none;
     z-index: 1;
     background: url(/wp-content/themes/killarney-lodge/res/relaxExploreEnjoy.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: contain;
   }
 }
 
 .gallery-videos {
-
+  max-width: 100%;
+  background: #1c1c1c;
 }
 
 .gallery-tours {
-
+  max-width: 100%;
+  background: #1c1c1c;
 }

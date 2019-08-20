@@ -9,6 +9,11 @@
             </div>
         </div>
     </div>
+    <div class="gallery-divider container">
+        <!-- relax enjoy explore -->
+        <!-- relax enjoy explore -->
+        <!-- relax enjoy explore -->
+    </div>
     <div class="gallery-videos container pb-5">
         <div class="row">
             <div class="col-12">
