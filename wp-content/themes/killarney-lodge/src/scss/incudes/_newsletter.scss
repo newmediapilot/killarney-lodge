@@ -1,0 +1,21 @@
+.newsletter-list {
+  .newsletter-title {
+    font-family: inherit;
+    margin-bottom: $spacer*2;
+    font-weight: bold;
+  }
+
+  .newsletter-listing {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin-right: $spacer;
+    }
+
+    margin-bottom: $spacer*2;
+  }
+}

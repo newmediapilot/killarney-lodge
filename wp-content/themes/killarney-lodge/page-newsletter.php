@@ -30,27 +30,26 @@ $blocks = wp_get_page_and_children($post_slug);
             <div class="col-12 col-md-4 col-lg-3">
                 <div class="row newsletter-list">
                     <div class="col-12">
-                        <h4>Lodge News</h4>
+                        <h6 class="newsletter-title">Lodge News</h6>
                     </div>
                     <div class="col-12">
-                        <?php
-
-                        /**
-                         * get posts that are category 'newsletter'
-                         */
-
-                        ?>
-                        <ul>
-                            <li class="newsletter-item">2019</li>
-                            <li class="newsletter-item">2018</li>
-                            <li class="newsletter-item">2017</li>
-                            <li class="newsletter-item">2016</li>
-                            <li class="newsletter-item">2015</li>
-                            <li class="newsletter-item">2014</li>
-                            <li class="newsletter-item">2013</li>
-                            <li class="newsletter-item">2012</li>
-                            <li class="newsletter-item">2011</li>
-                            <li class="newsletter-item">2010</li>
+                        <ul class="newsletter-listing">
+                            <?php
+                            /*
+                             * get posts that are category 'newsletter'
+                             */
+                            $newsletter_args = array(
+                                'category_name' => 'newsletter',
+                                'order' => 'DESC',
+                                'numberposts' => 9999
+                            );
+                            $newsletter_posts = get_posts($newsletter_args);
+                            foreach ($newsletter_posts as $newsletter) : setup_postdata($newsletter);
+                                echo "<li>";
+                                echo $newsletter->post_content;
+                                echo "</li>";
+                            endforeach;
+                            ?>
                         </ul>
                     </div>
                 </div>
