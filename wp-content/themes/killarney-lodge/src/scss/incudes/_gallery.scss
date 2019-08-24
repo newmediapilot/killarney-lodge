@@ -1,43 +1,61 @@
 .gallery-images {
-  padding-top: 5rem !important;
-  background: #1c1c1c;
-  max-width: 100%;
-  @media (max-width: 935px) {
-    padding-top: 0rem !important;
+  width: 100%;
+  background: #393939;
+  padding-bottom: 72px;
+
+  .gallery-slider {
+    width: 100%;
+  }
+}
+
+.gallery-videos {
+  width: 100%;
+  background: #393939;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+
+  .gallery-slider {
+    width: 80%;
+    padding: 1rem 1rem 6.5rem 1rem;
+    background-color: #d6d6d6;
+  }
+
+
+  @media (max-width: 576px) {
+    padding-bottom: 2rem;
   }
 }
 
 .gallery-divider {
   position: relative;
-  height: 5rem;
-  background: #1c1c1c;
-  max-width: 100%;
+  display: flex;
+  align-items: center;
+  background: #393939;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 
-  &:before {
-    left: 0;
-    top: 4%;
-    content: '';
+  @media (max-width: 576px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  @media (min-width: 576px+1px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  img {
+    margin-top: 4px;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    pointer-events: none;
-    z-index: 1;
-    background: url(/wp-content/themes/killarney-lodge/res/relaxExploreEnjoy.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
   }
 }
 
-.gallery-videos {
-  max-width: 100%;
-  background: #1c1c1c;
-  padding-bottom: 7rem;
-}
-
 .gallery-tours {
-  max-width: 100%;
-  background: #1c1c1c;
-  padding-bottom: 7rem;
-  margin-bottom: 2rem;
+  width: 100%;
+  background: #393939;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
 }
