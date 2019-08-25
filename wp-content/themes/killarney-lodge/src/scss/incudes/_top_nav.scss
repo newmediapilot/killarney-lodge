@@ -186,3 +186,12 @@ $nav-height-desktop: 5rem;
 
   // .kl-navbar-wrapper
 }
+
+/**
+bootstrap overrides
+ */
+
+.dropdown-toggle::after {
+  display: none;
+  visibility: hidden;
+}
