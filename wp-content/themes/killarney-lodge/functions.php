@@ -2,26 +2,32 @@
 
 function load_stylesheets()
 {
-    wp_register_style('killarney-styles', get_template_directory_uri() . '/dist/all.css');
-    wp_enqueue_style('killarney-styles');
+    wp_register_style('framework-styles', get_template_directory_uri() . '/dist/all.css');
+    wp_enqueue_style('framework-styles');
 }
 
 function load_javascripts()
 {
-    wp_register_script('killarney-javascript', get_template_directory_uri() . '/dist/all.js', '', 1, true);
-    wp_enqueue_script('killarney-javascript');
+    wp_register_script('framework-javascript', get_template_directory_uri() . '/dist/all.js', '', 1, true);
+    wp_enqueue_script('framework-javascript');
+
+    wp_register_script('popper-javascript', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', '', 1, true);
+    wp_enqueue_script('popper-javascript');
+
+    wp_register_script('bootstrap-javascript', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', '', 1, true);
+    wp_enqueue_script('bootstrap-javascript');
 }
 
 function add_meta_tags()
 {
     echo '<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">';
-    echo '<meta name="description"  content="Killarney Lodge photo gallery showcases the ultimate experience of wilderness which completely fetched the rustic beauty of the wild Algonquin Park landscape." />';
+    echo '<meta name="description"  content="framework Lodge photo gallery showcases the ultimate experience of wilderness which completely fetched the rustic beauty of the wild Algonquin Park landscape." />';
     echo '<meta name="keywords"  content="algonquin park lodge,algonquin park tour,algonquin park cottage,algonquin cottage rental,algonquin park lodge activities,algonquin camping,algonquin park inn" />';
 }
 
 function add_link_tags()
 {
-    echo '<link rel="icon" href="/wp-content/themes/killarney-lodge/res/favicon.ico">';
+    echo '<link rel="icon" href="/wp-content/themes/framework-lodge/res/favicon.ico">';
 }
 
 add_action('wp_head', 'add_meta_tags');
