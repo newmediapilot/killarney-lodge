@@ -32,7 +32,7 @@ foreach ($main_menu_parents as $menu_item_parent) {
 
             <div class="kl-navbar--items">
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light">
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -43,21 +43,39 @@ foreach ($main_menu_parents as $menu_item_parent) {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <?php foreach ($main_menu_parents as $main_menu_parent) { ?>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="<?php echo $main_menu_parent->url ?>"
-                                       id="navbarDropdown<?php echo $main_menu_parent->id ?>" role="button"
-                                       title="<?php echo $main_menu_parent->title ?>"
-                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <?php echo $main_menu_parent->title ?>
-                                    </a>
-                                    <div class="dropdown-menu"
-                                         aria-labelledby="navbarDropdown<?php echo $main_menu_parent->id ?>">
-                                        <?php foreach ($main_menu_parent->menu_item_children as $menu_child) { ?>
-                                            <a class="dropdown-item" title="<?php echo $menu_child->title ?>"
-                                               href="<?php echo $menu_child->url ?>"><?php echo $menu_child->title ?></a>
-                                        <?php } ?>
-                                    </div>
-                                </li>
+                                <!-- normal menu type -->
+                                <?php if (empty($main_menu_parent->menu_item_children)) { ?>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                           href="<?php echo $main_menu_parent->url ?>"
+                                           title="<?php echo $main_menu_parent->title ?>">
+                                            <?php echo $main_menu_parent->title ?>
+                                        </a>
+                                    </li>
+                                <?php } ?>
+                                <!-- end normal menu type -->
+                                <!-- dropdown menu type -->
+                                <?php if (!empty($main_menu_parent->menu_item_children)) { ?>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle"
+                                           href="<?php echo $main_menu_parent->url ?>"
+                                           id="navbarDropdown<?php echo $main_menu_parent->id ?>"
+                                           role="button"
+                                           title="<?php echo $main_menu_parent->title ?>"
+                                           data-toggle="dropdown" aria-haspopup="true"
+                                           aria-expanded="false">
+                                            <?php echo $main_menu_parent->title ?>
+                                        </a>
+                                        <div class="dropdown-menu"
+                                             aria-labelledby="navbarDropdown<?php echo $main_menu_parent->id ?>">
+                                            <?php foreach ($main_menu_parent->menu_item_children as $menu_child) { ?>
+                                                <a class="dropdown-item" title="<?php echo $menu_child->title ?>"
+                                                   href="<?php echo $menu_child->url ?>"><?php echo $menu_child->title ?></a>
+                                            <?php } ?>
+                                        </div>
+                                    </li>
+                                <?php } ?>
+                                <!-- end dropdown menu type -->
                             <?php } ?>
                         </ul>
                     </div>
