@@ -63,7 +63,8 @@ end mobile trigger mechanism
     @media (max-width: $nav-mobile-breakpoint) {
       margin-top: 2px;
       flex-direction: column;
-      box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.35);
+      box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.35);
+      font-size: 12px;
     }
 
     .menu-main-items {
@@ -92,6 +93,7 @@ end mobile trigger mechanism
           @media (max-width: $nav-mobile-breakpoint) {
             color: black;
             background-color: white;
+            padding: $nav-bar-spacer/3;
           }
         }
 
@@ -108,6 +110,7 @@ end mobile trigger mechanism
           @media (max-width: $nav-mobile-breakpoint) {
             visibility: visible;
             display: inline-block;
+            padding: $nav-bar-spacer/3;
           }
         }
 
@@ -138,6 +141,7 @@ end mobile trigger mechanism
             position: relative;
             left: initial;
             top: initial;
+            padding: $nav-bar-spacer/3 $nav-bar-spacer/2;
           }
 
           .menu-sub-item {
