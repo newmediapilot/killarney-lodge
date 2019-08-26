@@ -1,7 +1,7 @@
 <!-- begin bottom-nav-menu -->
 
 <?php $social_menu = wp_get_nav_menu_items('Social Menu'); ?>
-<?php $footer_menu = wp_get_nav_menu_items('Footer Menu'); ?>
+<?php $footer_menu = wp_get_nav_menu_items('Default Top Menu'); ?>
 
 <?php
 $footer_menu_parents = array_filter($footer_menu, function ($footer_item) {
