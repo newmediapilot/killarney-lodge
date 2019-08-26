@@ -31,37 +31,43 @@ foreach ($main_menu_parents as $menu_item_parent) {
             </div>
 
             <div class="kl-navbar--items">
-
                 <nav class="kl-responsive-nav">
-                    <button class="nav-mobile-trigger"
-                            type="button">
-                        (open-menu)
-                    </button>
-                    <?php foreach ($main_menu_parents as $main_menu_parent) { ?>
-                        <ul>
-                            <?php if (!empty($main_menu_parent->menu_item_children)) { ?>
-                                <button type="button">
-                                    (open-sub-menu)
-                                </button>
-                            <?php } ?>
-                            <li>
-                                <a href="<?php echo $main_menu_parent->url ?>"
-                                   title="<?php echo $main_menu_parent->title ?>"
-                                    <?php echo $main_menu_parent->title ?>
-                                </a>
-                                <ul>
-                                    <?php foreach ($main_menu_parent->menu_item_children as $menu_child) { ?>
-                                        <li>
-                                            <a title="<?php echo $menu_child->title ?>"
-                                               href="<?php echo $menu_child->url ?>">
-                                                <?php echo $menu_child->title ?>
+                    <a class="nav-mobile-trigger" href="#"
+                       title="Toggle Navigation">
+                        <i class="fas fa-caret-square-down"></i>
+                    </a>
+                    <div class="responsive-nav">
+                        <?php foreach ($main_menu_parents as $main_menu_parent) { ?>
+                            <ul class="menu-main-items">
+                                <li class="menu-main-item">
+                                    <div class="menu-main-item-link">
+                                        <a href="<?php echo $main_menu_parent->url ?>"
+                                           title="<?php echo $main_menu_parent->title ?>">
+                                            <?php echo $main_menu_parent->title ?>
+                                        </a>
+                                        <?php if (!empty($main_menu_parent->menu_item_children)) { ?>
+                                            <a title="Toggle Items (<?php echo $main_menu_parent->title ?>)"
+                                               class="menu-sub-item-trigger" href="#">
+                                                <i class="fas fa-caret-square-down"></i>
                                             </a>
-                                        </li>
+                                        <?php } ?>
+                                    </div>
+                                    <?php if (!empty($main_menu_parent->menu_item_children)) { ?>
+                                        <ul class="menu-sub-items">
+                                            <?php foreach ($main_menu_parent->menu_item_children as $menu_child) { ?>
+                                                <li class="menu-sub-item">
+                                                    <a title="<?php echo $menu_child->title ?>"
+                                                       href="<?php echo $menu_child->url ?>">
+                                                        <i class="fas fa-chevron-right"></i><?php echo $menu_child->title ?>
+                                                    </a>
+                                                </li>
+                                            <?php } ?>
+                                        </ul>
                                     <?php } ?>
-                                </ul>
-                            </li>
-                        </ul>
-                    <?php } ?>
+                                </li>
+                            </ul>
+                        <?php } ?>
+                    </div>
                     <!-- end dropdown menu type -->
                 </nav>
 

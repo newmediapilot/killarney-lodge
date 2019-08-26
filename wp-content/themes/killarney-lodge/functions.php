@@ -16,6 +16,9 @@ function load_javascripts()
 
     wp_register_script('bootstrap-javascript', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', '', 1, true);
     wp_enqueue_script('bootstrap-javascript');
+
+    wp_register_script('fontawesome-javascript', 'https://kit.fontawesome.com/e696fc9d2a.js', '', 1, true);
+    wp_enqueue_script('fontawesome-javascript');
 }
 
 function add_meta_tags()
