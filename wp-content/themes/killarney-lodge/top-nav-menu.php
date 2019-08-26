@@ -32,27 +32,31 @@ foreach ($main_menu_parents as $menu_item_parent) {
 
             <div class="kl-navbar--items">
                 <nav class="kl-responsive-nav">
-                    <a class="nav-mobile-trigger" href="#"
-                       title="Toggle Navigation">
+                    <!-- trigger -->
+                    <label for="mobile-trigger" title="Open/Close Menu" class="nav-mobile-trigger">
                         <i class="fas fa-caret-square-down"></i>
-                    </a>
+                    </label>
+                    <input name="mobile-trigger" id="mobile-trigger" type="checkbox">
+                    <!-- end trigger -->
                     <div class="responsive-nav">
                         <?php foreach ($main_menu_parents as $main_menu_parent) { ?>
                             <ul class="menu-main-items">
                                 <li class="menu-main-item">
-                                    <div class="menu-main-item-link">
-                                        <a href="<?php echo $main_menu_parent->url ?>"
-                                           title="<?php echo $main_menu_parent->title ?>">
-                                            <?php echo $main_menu_parent->title ?>
-                                        </a>
-                                        <?php if (!empty($main_menu_parent->menu_item_children)) { ?>
-                                            <a title="Toggle Items (<?php echo $main_menu_parent->title ?>)"
-                                               class="menu-sub-item-trigger" href="#">
-                                                <i class="fas fa-caret-square-down"></i>
-                                            </a>
-                                        <?php } ?>
-                                    </div>
+                                    <a href="<?php echo $main_menu_parent->url ?>"
+                                       title="<?php echo $main_menu_parent->title ?>"
+                                       class="menu-sub-item-link">
+                                        <?php echo $main_menu_parent->title ?>
+                                    </a>
                                     <?php if (!empty($main_menu_parent->menu_item_children)) { ?>
+                                        <!-- trigger -->
+                                        <label for="sub-item-trigger-<?php echo $main_menu_parent->ID ?>"
+                                               title="Toggle Items (<?php echo $main_menu_parent->title ?>)"
+                                               class="menu-sub-item-trigger">
+                                            <i class="fas fa-caret-square-down"></i>
+                                        </label>
+                                        <input name="sub-item-trigger"
+                                               id="sub-item-trigger-<?php echo $main_menu_parent->ID ?>" type="radio">
+                                        <!-- end trigger -->
                                         <ul class="menu-sub-items">
                                             <?php foreach ($main_menu_parent->menu_item_children as $menu_child) { ?>
                                                 <li class="menu-sub-item">

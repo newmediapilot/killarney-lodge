@@ -69,15 +69,6 @@
 })(jQuery);
 
 /**
- * navbar solution
- */
-(function ($) {
-    var $nav_mobile_trigger = $('.nav-mobile-trigger');
-    var $menu_sub_item_trigger = $('.menu-sub-item-trigger');
-    
-})(jQuery);
-
-/**
  * end killarney-lodge js
  **/
 
