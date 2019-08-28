@@ -1,4 +1,7 @@
 .gallery-images {
+  @media (max-width: 935px) {
+    margin-top: -(5*$spacer);
+  }
   width: 100%;
   background: #393939;
   padding-bottom: 72px;
