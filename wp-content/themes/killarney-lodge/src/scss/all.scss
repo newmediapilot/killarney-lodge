@@ -205,5 +205,22 @@ H1, H2, H3, H4, H5, H6 {
       width: 100%;
     }
   }
+}
 
+/**
+hovers for link images only
+ */
+.wp-block-image {
+  a {
+    img {
+      transition: all .75s ease-in;
+      filter: contrast(1);
+    }
+
+    &:hover {
+      img {
+        filter: contrast(1.15);
+      }
+    }
+  }
 }
