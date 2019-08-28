@@ -8,6 +8,12 @@
     "start": "gulp watch",
     "deploy": "git fetch; git pull; gulp"
   },
+  "browserslist": [
+    "Explorer >= 10",
+    "Firefox >= 50",
+    "Safari >= 9",
+    "Chrome >= 20"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/newmediapilot/killarney-lodge.git"
