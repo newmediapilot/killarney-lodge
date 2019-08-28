@@ -214,13 +214,12 @@ hovers for link images only
 .wp-block-image {
   a {
     img {
-      transition: all .75s ease-in;
-      filter: contrast(1);
+      opacity: 1;
     }
 
     &:hover {
       img {
-        filter: contrast(1.15);
+        opacity: .75;
       }
     }
   }
