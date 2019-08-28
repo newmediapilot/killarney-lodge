@@ -7,7 +7,8 @@
             <?php echo do_shortcode('[wonderplugin_slider id=16]'); ?>
         </div>
     </div>
-    <div class="gallery-divider">
+    <div id="video"
+         class="gallery-divider">
         <img title="Relax Explore Enjoy" src="/wp-content/themes/killarney-lodge/res/relaxExploreEnjoy.png">
     </div>
     <div class="gallery-videos">
