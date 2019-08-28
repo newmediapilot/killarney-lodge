@@ -1,49 +1,88 @@
 .kl-cabins {
+  /**
+  background image
+   */
   display: flex;
   flex-direction: column;
   align-items: center;
   background: url('/wp-content/themes/killarney-lodge/res/cabin-map/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-
-  .kl-cabins--image {
-    display: flex;
-    justify-content: center;
+  /**
+  buttons and panels
+   */
+  .kl-cabins--images {
+    position: relative;
 
     img {
-      margin-top: 85px;
-      width: 60%;
-      object-fit: contain; // FF, Safari
-      @media (max-width: 935px) {
-        margin-top: 0;
+      display: block;
+      margin-top: $spacer*5.5;
+      margin-bottom: $spacer;
+      width: 600px;
+      opacity: 0;
+
+      &.kl-cabins--image--show {
+        opacity: 1;
       }
+    }
+
+    img:not(:first-child) {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
     }
   }
 
   .kl-cabins--selectors {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin-bottom: 40px;
-    margin-top: 15px;
-    flex-wrap: wrap;
+    margin-bottom: $spacer*3.5;
+    text-align: center;
 
     img {
       cursor: pointer;
       width: 110px;
-      @media(max-width: 962px) {
-        width: 80px;
-      }
-      @media(max-width: 736px) {
-        width: 127px;
-      }
-      @media(max-width: 373px) {
-        width: 69px;
-      }
-
       margin-left: $spacer/2;
       margin-right: $spacer/2;
       margin-bottom: $spacer;
+    }
+  }
+}
+
+.kl-cabins {
+  @media(max-width: 935px) {
+    .kl-cabins--images {
+      img {
+        margin-top: $spacer/2;
+      }
+    }
+    .kl-cabins--selectors {
+      img {
+        width: 110px;
+      }
+    }
+  }
+  @media(max-width: 610px) {
+    .kl-cabins--images {
+      img {
+        width: 375px;
+      }
+    }
+    .kl-cabins--selectors {
+      img {
+        width: 90px;
+      }
+    }
+  }
+  @media(max-width: 385px) {
+    .kl-cabins--images {
+      img {
+        width: 240px;
+      }
+    }
+    .kl-cabins--selectors {
+      img {
+        width: 90px;
+      }
     }
   }
 }
