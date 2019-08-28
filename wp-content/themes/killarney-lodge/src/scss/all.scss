@@ -214,12 +214,12 @@ hovers for link images only
 .wp-block-image {
   a {
     img {
-      opacity: 1;
+      filter: brightness(100%);
     }
 
     &:hover {
       img {
-        opacity: .75;
+        filter: brightness(85%);
       }
     }
   }
