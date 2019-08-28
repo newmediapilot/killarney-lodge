@@ -80,7 +80,6 @@ $nav-height-desktop: 5rem;
       .kl-navbar--menu {
         position: absolute;
         left: $spacer;
-        z-index: -1;
 
         @media(max-width: 360px) {
           left: 0;
