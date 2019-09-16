@@ -77,11 +77,14 @@ foreach ($main_menu_parents as $menu_item_parent) {
 
             </div>
             <div class="kl-navbar--phone">
-                <a href="<?php echo $phone_menu[0]->url ?>"
-                   title="<?php echo $phone_menu[0]->title ?>">
-                    <div class="kl-navbar--phone-number"><?php echo $phone_menu[0]->attr_title ?></div>
-                    <div class="kl-navbar--phone-title"><?php echo $phone_menu[0]->title ?></div>
-                </a>
+                <div>
+                    <a href="<?php echo $phone_menu[0]->url ?>"
+                       title="<?php echo $phone_menu[0]->title ?>"
+                       class="kl-navbar--phone-number"><?php echo $phone_menu[0]->attr_title ?></a>
+                    <a href="<?php echo $reservation_menu[0]->url ?>"
+                       title="<?php echo $reservation_menu[0]->title ?>"
+                       class="kl-navbar--phone-title"><?php echo $phone_menu[0]->title ?></a>
+                </div>
             </div>
         </div>
     </div><!-- end top-nav-desktop -->

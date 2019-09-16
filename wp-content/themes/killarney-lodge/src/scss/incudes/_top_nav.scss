@@ -19,9 +19,9 @@ $nav-height-desktop: 5rem;
     position: fixed;
     z-index: 3;
     left: 5px;
-    top: 200px;
+    bottom: 180px;
     @media(max-width: 767px) {
-      top: 40%;
+      bottom:100px;
     }
 
     &:hover {
@@ -119,7 +119,7 @@ $nav-height-desktop: 5rem;
           transform-origin: top right;
         }
 
-        a {
+        div {
 
           text-decoration: inherit;
           color: inherit;
@@ -130,6 +130,7 @@ $nav-height-desktop: 5rem;
             letter-spacing: 1px;
             padding-bottom: 5px;
             text-shadow: 1px 1px black;
+            display:block;
           }
 
           .kl-navbar--phone-title {

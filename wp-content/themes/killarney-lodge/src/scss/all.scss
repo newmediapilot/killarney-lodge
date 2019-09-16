@@ -224,3 +224,18 @@ hovers for link images only
     }
   }
 }
+
+.footer-credits {
+  padding: $spacer;
+  font-size: 12px;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: #8e100e;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
