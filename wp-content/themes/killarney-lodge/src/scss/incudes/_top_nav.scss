@@ -129,6 +129,9 @@ $nav-height-desktop: 5rem;
             color: white;
             letter-spacing: 1px;
             padding-bottom: 5px;
+            @media (max-width: 482px) {
+              padding-bottom: 20px;
+            }
             text-shadow: 1px 1px black;
             display:block;
           }
