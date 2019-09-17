@@ -43,6 +43,7 @@ foreach ($main_menu_parents as $menu_item_parent) {
                             <ul class="menu-main-items">
                                 <li class="menu-main-item">
                                     <a href="<?php echo $main_menu_parent->url ?>"
+                                       target="<?php echo $main_menu_parent->target ?>"
                                        title="<?php echo $main_menu_parent->title ?>"
                                        class="menu-sub-item-link">
                                         <?php echo $main_menu_parent->title ?>
@@ -61,7 +62,8 @@ foreach ($main_menu_parents as $menu_item_parent) {
                                             <?php foreach ($main_menu_parent->menu_item_children as $menu_child) { ?>
                                                 <li class="menu-sub-item">
                                                     <a title="<?php echo $menu_child->title ?>"
-                                                       href="<?php echo $menu_child->url ?>">
+                                                       href="<?php echo $menu_child->url ?>"
+                                                       target="<?php echo $menu_child->target ?>">
                                                         <i class="fas fa-chevron-right"></i><?php echo $menu_child->title ?>
                                                     </a>
                                                 </li>

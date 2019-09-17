@@ -76,11 +76,13 @@ foreach ($footer_menu_parents as $menu_item_parent) {
                         <ul>
                             <li>
                                 <a href="<?php echo $footer_menu_parent->url ?>"
+                                   target="<?php echo $footer_menu_parent->target ?>"
                                    title="<?php echo $footer_menu_parent->title ?>"><?php echo $footer_menu_parent->title ?></a>
                             </li>
                             <?php foreach ($footer_menu_parent->menu_item_children as $menu_child) { ?>
                                 <li>
                                     <a href="<?php echo $menu_child->url ?>"
+                                       target="<?php echo $menu_child->target ?>"
                                        title="<?php echo $menu_child->title ?>"><?php echo $menu_child->title ?></a>
                                 </li>
                             <?php } ?>
