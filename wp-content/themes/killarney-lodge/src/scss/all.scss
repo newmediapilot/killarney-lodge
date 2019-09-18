@@ -239,3 +239,10 @@ hovers for link images only
     }
   }
 }
+
+/**
+IE11 fix for images without height set (causing vertical height)
+ */
+img, .wp-block-image {
+  min-height: 1px;
+}
