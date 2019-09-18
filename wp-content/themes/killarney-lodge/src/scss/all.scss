@@ -10,15 +10,6 @@
 @import './incudes/_gallery.scss';
 @import './incudes/_site_map.scss';
 
-/**
-override for XL screens
- */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
 body {
   font-family: Verdana, sans-serif;
   font-size: 14px;
