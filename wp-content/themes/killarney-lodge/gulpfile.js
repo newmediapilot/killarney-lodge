@@ -24,7 +24,7 @@ gulp.task('sass', function () {
 gulp.task('js', function () {
         return gulp.src(
             [
-                './src/js/vendor/**/*.js',
+                '../',
                 './src/js/main.js'
             ]
         )
