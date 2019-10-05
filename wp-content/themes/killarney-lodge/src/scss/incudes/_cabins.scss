@@ -14,6 +14,8 @@
   .kl-cabins--images {
     position: relative;
 
+
+
     img {
       display: block;
       margin-top: $spacer*5.5;
@@ -26,7 +28,7 @@
       }
     }
 
-    img:not(:first-child) {
+    img:not(:first-of-type) {
       position: absolute;
       left: 0;
       top: 0;
