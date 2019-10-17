@@ -33,3 +33,5 @@ ssh -i "~/.ssh/KillarneyLodge-us-east-1.pem" -L 127.0.0.1:8888:127.0.0.1:80 -L 1
 sudo find /home/bitnami/apps/wordpress/htdocs -type f -exec chmod 777 {} \;
 sudo find /home/bitnami/apps/wordpress/htdocs -type d -exec chmod 777 {} \;
 ```
+#Renew SSL
+https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-using-lets-encrypt-certificates-with-wordpress
