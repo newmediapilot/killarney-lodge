@@ -8,7 +8,9 @@
 
 <div class="footer-credits">
     © 2019, Killarney Lodge, Algonquin Park, Ontario. All Rights Reserved.<br>
-    <a href="https://www.christopher-dew.com" target="_blank">Design + Principle Photography Christopher Dew</a><br>
+    <a href="https://www.christopher-dew.com" target="_blank">
+        <span>Design + Principle Photography</span><span>Christopher Dew</span></a>
+    <br>
     <a href="https://www.linkedin.com/in/newmediapilot" target="_blank">Website Development by Marcin Zajkowski</a><br>
 </div>
 

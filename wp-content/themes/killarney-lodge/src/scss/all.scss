@@ -237,6 +237,11 @@ hovers for link images only
     &:hover {
       text-decoration: underline;
     }
+
+    span {
+      word-break: keep-all;
+      white-space: nowrap;
+    }
   }
 }
 
