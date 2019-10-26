@@ -24,8 +24,7 @@ function load_javascripts()
 function add_meta_tags()
 {
     echo '<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">';
-    echo '<meta name="description"  content="framework Lodge photo gallery showcases the ultimate experience of wilderness which completely fetched the rustic beauty of the wild Algonquin Park landscape." />';
-    echo '<meta name="keywords"  content="algonquin park lodge,algonquin park tour,algonquin park cottage,algonquin cottage rental,algonquin park lodge activities,algonquin camping,algonquin park inn" />';
+    echo '<meta name="keywords"  content="algonquin park lodge, algonquin park pine cabin, algonquin park accommodation, algonquin park lodge ontario, algonquin park cabin rental, algonquin lakeside inn" />';
 }
 
 function add_link_tags()
