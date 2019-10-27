@@ -85,7 +85,7 @@ foreach ($main_menu_parents as $menu_item_parent) {
                        class="kl-navbar--phone-number"><?php echo $phone_menu[0]->attr_title ?></a>
                     <a href="<?php echo $reservation_menu[0]->url ?>"
                        title="<?php echo $reservation_menu[0]->title ?>"
-                       class="kl-navbar--phone-title"><?php echo $phone_menu[0]->title ?></a>
+                       class="kl-navbar--phone-title">Reservations</a>
                 </div>
             </div>
         </div>
