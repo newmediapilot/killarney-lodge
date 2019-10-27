@@ -11,7 +11,7 @@
     <a href="https://www.christopher-dew.com" target="_blank">
         <span>Design + Principle Photography</span>&nbsp;<span>Christopher Dew</span></a>
     <br>
-    <a href="https://www.linkedin.com/in/newmediapilot" target="_blank">Website Development by Marcin Zajkowski</a><br>
+    <a href="https://www.newmediapilot.com" target="_blank">Website Development by New Media Pilot</a><br>
 </div>
 
 </html>
