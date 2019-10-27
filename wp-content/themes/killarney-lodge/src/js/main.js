@@ -90,12 +90,10 @@
             for (var i = 0; i < analyticsTargets.length; i++) {
                 var analyticsTarget = analyticsTargets[i];
                 if (analyticsTarget.title === title) {
-                    console.log('analyticsTarget', analyticsTarget);
                     analyticsTarget.call();
                     break;
                 }
             }
-            event.preventDefault();
         });
         console.log('document ready');
     });
