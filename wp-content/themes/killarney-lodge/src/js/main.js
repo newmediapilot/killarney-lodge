@@ -11,7 +11,7 @@
         $(images).removeClass('kl-cabins--image--show');
         $(images[index]).addClass('kl-cabins--image--show');
     }
-})($);
+})(jQuery);
 
 /**
  * track google analytics events
@@ -109,7 +109,7 @@
         });
         console.log('document ready');
     });
-})($);
+})(jQuery);
 
 /**
  * end killarney-lodge js
