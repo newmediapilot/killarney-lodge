@@ -17,10 +17,6 @@
  * track google analytics events
  */
 (function ($) {
-    /**
-     * stop this
-     */
-    return;
     var analyticsTargets = [
         {
             title: 'Trip Advisor', call: function () {
