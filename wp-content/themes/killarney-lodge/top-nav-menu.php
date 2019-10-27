@@ -92,7 +92,7 @@ foreach ($main_menu_parents as $menu_item_parent) {
     </div><!-- end top-nav-desktop -->
     <!-- book now -->
     <a href="<?php echo $reservation_menu[0]->url ?>"
-       target="_blank"
+       target="<?php echo $reservation_menu[0]->target ?>"
        title="<?php echo $reservation_menu[0]->title ?>"
        class="kl-navbar--book-now">
         <span>
