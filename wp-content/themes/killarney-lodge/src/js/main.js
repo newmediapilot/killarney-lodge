@@ -22,45 +22,53 @@
             title: 'Trip Advisor', call: function () {
                 ga('send', 'pageview', '/social_click');
                 ga('send', 'event', 'Click_Trip_Advisor', 'button-click');
+                console.log('call Trip Advisor');
             }
         },
         {
             title: 'Facebook', call: function () {
                 ga('send', 'pageview', '/social_click');
                 ga('send', 'event', 'Click_Facebook', 'button-click');
+                console.log('call Facebook');
             }
         },
         {
             title: 'Instagram', call: function () {
                 ga('send', 'pageview', '/social_click');
                 ga('send', 'event', 'Click_Instagram', 'button-click');
+                console.log('call Instagram');
             }
         },
         {
             title: 'YouTube', call: function () {
                 ga('send', 'pageview', '/social_click');
                 ga('send', 'event', 'Click_YouTube', 'button-click');
+                console.log('call YouTube');
             }
         },
         {
             title: 'Weather Forecast', call: function () {
                 ga('send', 'pageview', '/social_click');
                 ga('send', 'event', 'Click_Weather_Forecast', 'button-click');
+                console.log('call Weather Forecast');
             }
         },
         {
             title: 'Call Us', call: function () {
                 ga('send', 'event', 'Click_Call_Us', 'button-click');
+                console.log('call Call Us');
             }
         },
         {
             title: 'Reservations', call: function () {
                 ga('send', 'event', 'Make_Reservation', 'button-click');
+                console.log('call Reservations');
             }
         },
         {
             title: 'Book Here', call: function () {
                 ga('send', 'event', 'Make_Reservation', 'button-click');
+                console.log('call Book Here');
             }
         },
         {
