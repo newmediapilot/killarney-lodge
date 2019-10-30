@@ -55,18 +55,21 @@
         },
         {
             title: 'Call Us', call: function () {
+                ga('send', 'pageview', '/call_us');
                 ga('send', 'event', 'Click_Call_Us', 'button-click');
                 console.log('call Call Us');
             }
         },
         {
             title: 'Reservations', call: function () {
+                ga('send', 'pageview', '/make_reservation');
                 ga('send', 'event', 'Make_Reservation', 'button-click');
                 console.log('call Reservations');
             }
         },
         {
             title: 'Book Here', call: function () {
+                ga('send', 'pageview', '/make_reservation');
                 ga('send', 'event', 'Make_Reservation', 'button-click');
                 console.log('call Book Here');
             }
