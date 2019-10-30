@@ -13,7 +13,6 @@
     <title><?php bloginfo('name'); ?><?php wp_title(); ?><?php if($seo_title_source){ echo ' &raquo; '.$seo_title_source; } ?></title>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <?php include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); ?>
-    <?php if($seo_title_source){ echo ' &raquo; '.$seo_title_source; } ?>
     <?php if($seo_description_source){ echo '<meta name="description" content="'.$seo_description_source.'" />'; } ?>
     <?PHP wp_head(); ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
