@@ -25,7 +25,7 @@ function add_meta_tags()
 {
     echo '<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">';
     echo '<meta name="keywords"  content="algonquin park lodge, algonquin park pine cabin, algonquin park accommodation, algonquin park lodge ontario, algonquin park cabin rental, algonquin lakeside inn" />';
-    echo '<meta name="description" content="Killarney Lodge situated in Algonquin Park offers spacious and beautifully decorated private pine cabins which are a perfect back drop to your Ontario vacation."> />';
+    echo '<meta name="description" content="Killarney Lodge situated in Algonquin Park offers spacious and beautifully decorated private pine cabins which are a perfect back drop to your Ontario vacation." />';
 }
 
 function add_link_tags()
