@@ -10,7 +10,7 @@
         $seo_title_source = get_metadata('post', $master->ID, 'title', true);
         $seo_description_source = get_metadata('post', $master->ID, 'description', true);
     ?>
-    <title><?php bloginfo('name'); ?><?php wp_title(); ?><?php if($seo_title_source){ echo ' &raquo; '.$seo_title_source; } ?></title>
+    <title><?php bloginfo('name'); ?><?php if($seo_title_source){ echo $seo_title_source; } ?></title>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <?php include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); ?>
     <?php if($seo_description_source){ echo '<meta name="description" content="'.$seo_description_source.'" />'; } ?>
