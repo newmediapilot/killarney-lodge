@@ -4,7 +4,12 @@
 
 <html <?php language_attributes(); ?>>
 <head>
-    <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+    <?php
+        global $post;
+        $master = $post;
+        $seo_title_source = get_metadata('post', $master->ID, 'title', true)
+    ?>
+    <title><?php bloginfo('name'); ?><?php wp_title(); ?><?php if($seo_title_source){ echo ' &raquo; '.$seo_title_source; } ?></title>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <?php include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); ?>
     <?PHP wp_head(); ?>
