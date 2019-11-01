@@ -47,9 +47,7 @@
     <!-- etc -->
 </head>
 <body
-<noscript>
-    <iframe src="https://web.archive.org/web/20181225195142if_/https://www.googletagmanager.com/ns.html?id=GTM-KM8M8QH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <?php body_class(); ?>>
+<?php body_class(); ?>>
 
 <?php include 'top-nav-menu.php'; ?>
 
