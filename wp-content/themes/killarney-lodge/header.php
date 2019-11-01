@@ -16,14 +16,14 @@
     <?php if($seo_description_source){ echo '<meta name="description" content="'.$seo_description_source.'" />'; } ?>
     <?PHP wp_head(); ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23837992-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-KM8M8QH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'UA-23837992-1');
+        gtag('config', 'GTM-KM8M8QH');
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics-->
     <!-- Facebook pixel tag -->
     <script>!function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -39,8 +39,17 @@
         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=236172690476053&amp;ev=PageView&amp;noscript=1"/>
     </noscript>
     <!-- Facebook pixel tag -->
+    <!-- etc -->
+    <meta name="y_key" content="69ac917b71c55f44">
+    <meta name="google-site-verification" content="so449KYFdOh_OZf8ozeAh8EzRjMk_7TytnqJSflfdSo">
+    <meta name="msvalidate.01" content="EAFD37E14DE2FB4983342380ACF67CFA">
+    <link href="https://plus.google.com/102884272161556376079" rel="publisher">
+    <!-- etc -->
 </head>
-<body <?php body_class(); ?>>
+<body
+<noscript>
+    <iframe src="https://web.archive.org/web/20181225195142if_/https://www.googletagmanager.com/ns.html?id=GTM-KM8M8QH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <?php body_class(); ?>>
 
 <?php include 'top-nav-menu.php'; ?>
 
