@@ -12,5 +12,7 @@ RewriteRule . /index.php [L]
 # END WordPress
 
 # BEGIN Newmediapilot
-
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^killarneylodge.com [NC]
+RewriteRule ^(.*)$ https://www.killarneylodge.com/$1 [L,R=301]
 # END Newmediapilot
