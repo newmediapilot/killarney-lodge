@@ -4,16 +4,8 @@
 
 <html <?php language_attributes(); ?>>
 <head>
-    <?php
-        global $post;
-        $master = $post;
-        $seo_title_source = get_metadata('post', $master->ID, 'title', true);
-        $seo_description_source = get_metadata('post', $master->ID, 'description', true);
-    ?>
-    <title><?php if($seo_title_source){ echo $seo_title_source; } ?></title>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <?php include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); ?>
-    <?php if($seo_description_source){ echo '<meta name="description" content="'.$seo_description_source.'" />'; } ?>
     <?PHP wp_head(); ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-KM8M8QH"></script>
