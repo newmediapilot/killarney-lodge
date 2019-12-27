@@ -6,8 +6,11 @@ https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-using-l
 ### Start verification
 
 ```
-sudo certbot -d www.killarneylodge.ca -d killarneylodge.ca --webroot -w /home/bitnami/apps/wordpress/htdocs --preferred-challenges http certonly
-sudo ln -s /etc/letsencrypt/live/killarneylodge.ca-0001/privkey.pem /opt/bitnami/apache2/conf/server.key
-sudo ln -s /etc/letsencrypt/live/killarneylodge.ca-0001/fullchain.pem /opt/bitnami/apache2/conf/server.crt
+DOMAIN=killarneylodge.com
+sudo certbot -d www.${DOMAIN} -d ${DOMAIN} --webroot -w /home/bitnami/apps/wordpress/htdocs/ --preferred-challenges http certonly
+sudo mv /opt/bitnami/apache2/conf/server.key /opt/bitnami/apache2/conf/server.key.old
+sudo mv /opt/bitnami/apache2/conf/server.crt /opt/bitnami/apache2/conf/server.crt.old
+sudo ln -s /etc/letsencrypt/live/${DOMAIN}/privkey.pem /opt/bitnami/apache2/conf/server.key
+sudo ln -s /etc/letsencrypt/live/${DOMAIN}/fullchain.pem /opt/bitnami/apache2/conf/server.crt
 sudo /opt/bitnami/ctlscript.sh restart
 ```
