@@ -95,6 +95,8 @@ function check_for_category_single_template( $t )
 }
 add_filter('single_template', 'check_for_category_single_template');
 
+add_theme_support( 'title-tag' );
+
 /**
  * end functions.php
  */
