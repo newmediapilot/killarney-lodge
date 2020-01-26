@@ -4,9 +4,7 @@
 
 </body>
 
-<div id="navigation">
 <?php wp_footer(); ?>
-</div>
 
 <div class="footer-credits">
     © <?php echo date("Y"); ?>, Killarney Lodge, Algonquin Park, Ontario. All Rights Reserved.<br>

@@ -15,7 +15,8 @@ foreach ($footer_menu_parents as $menu_item_parent) {
 //var_dump($footer_menu_parents);
 ?>
 
-<footer class="container kl-footer">
+<footer id="navigation"
+        class="container kl-footer">
     <div class="row">
         <!-- social items -->
         <div class="kl-footer--social col-12 col-lg-3">
