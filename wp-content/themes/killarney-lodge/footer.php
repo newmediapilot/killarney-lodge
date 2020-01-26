@@ -6,7 +6,7 @@
 
 <?php wp_footer(); ?>
 
-<div class="footer-credits">
+<div id="navigation" class="footer-credits">
     © <?php echo date("Y"); ?>, Killarney Lodge, Algonquin Park, Ontario. All Rights Reserved.<br>
     <a href="https://www.christopher-dew.com" target="_blank">
         <span>Design + Principle Photography</span>&nbsp;<span>Christopher Dew</span></a>
