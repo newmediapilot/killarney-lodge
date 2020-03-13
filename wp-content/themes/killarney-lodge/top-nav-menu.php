@@ -34,7 +34,7 @@ foreach ($main_menu_parents as $menu_item_parent) {
                 <nav class="kl-responsive-nav">
                     <!-- trigger -->
                     <label for="mobile-trigger" title="Open/Close Menu" class="nav-mobile-trigger">
-                        <i class="fas fa-caret-square-down"></i>
+                        <i class="fas fa-bars"></i>
                     </label>
                     <input name="mobile-trigger" id="mobile-trigger" type="checkbox">
                     <!-- end trigger -->
