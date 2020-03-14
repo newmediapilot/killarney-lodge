@@ -111,6 +111,26 @@
 })(jQuery);
 
 /**
+ * menu collapse mobile
+ */
+(function ($) {
+    var lastScrollTop = 0;
+    var scrollTarget = $('#kl-navbar-collapser');
+    var scrollRespond = function (evt) {
+        var st = $(this).scrollTop();
+        var isDown = st > lastScrollTop;
+        if (isDown) {
+            scrollTarget.css({top: 0 - scrollTarget.outerHeight()});
+        } else {
+            scrollTarget.css({top: 0});
+        }
+        lastScrollTop = st;
+    };
+    $(document).scroll(scrollRespond);
+    console.log('scroll ready');
+})(jQuery);
+
+/**
  * end killarney-lodge js
  **/
 

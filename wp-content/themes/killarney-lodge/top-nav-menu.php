@@ -19,7 +19,7 @@ foreach ($main_menu_parents as $menu_item_parent) {
 
 <nav class="kl-navbar--desktop">
     <!-- top-nav-desktop -->
-    <div class="kl-navbar-wrapper">
+    <div id="kl-navbar-collapser" class="kl-navbar-wrapper">
         <div class="kl-navbar--holder">
 
             <div class="kl-navbar--menu">

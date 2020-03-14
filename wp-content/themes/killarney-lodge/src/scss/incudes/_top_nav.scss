@@ -21,7 +21,7 @@ $nav-height-desktop: 5rem;
     left: 5px;
     bottom: 180px;
     @media(max-width: 767px) {
-      bottom:100px;
+      bottom: 100px;
     }
 
     &:hover {
@@ -52,7 +52,7 @@ $nav-height-desktop: 5rem;
   }
 
   .kl-navbar-wrapper {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .75);
     padding: $spacer/2;
     width: 100%;
     height: $nav-height-desktop;
@@ -60,6 +60,8 @@ $nav-height-desktop: 5rem;
     z-index: 2;
     left: 0;
     right: 0;
+    top:0;
+    transition: all 200ms;
 
     .kl-navbar--holder {
       position: relative;
@@ -133,7 +135,7 @@ $nav-height-desktop: 5rem;
               padding-bottom: 20px;
             }
             text-shadow: 1px 1px black;
-            display:block;
+            display: block;
           }
 
           .kl-navbar--phone-title {
