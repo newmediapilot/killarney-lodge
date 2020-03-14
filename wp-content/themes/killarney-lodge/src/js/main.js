@@ -115,12 +115,19 @@
  */
 (function ($) {
     var lastScrollTop = 0;
+    var menuTrigger = $('#mobile-trigger');
     var scrollTarget = $('#kl-navbar-collapser');
     var scrollRespond = function (evt) {
         var st = $(this).scrollTop();
         var isDown = st > lastScrollTop;
         if (isDown) {
             scrollTarget.css({top: 0 - scrollTarget.outerHeight()});
+            /**
+             * collapse menu
+             */
+            if (menuTrigger.prop("checked")) {
+                menuTrigger.prop("checked", false);
+            }
         } else {
             scrollTarget.css({top: 0});
         }
