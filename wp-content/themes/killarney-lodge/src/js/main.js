@@ -114,6 +114,11 @@
  * menu collapse mobile
  */
 (function ($) {
+    var minWidth = $(window).width();
+    if (minWidth > 820) {
+        console.log('scroll ready... not mobile - cancelling function');
+        return;
+    }
     var lastScrollTop = 0;
     var menuTrigger = $('#mobile-trigger');
     var scrollTarget = $('#kl-navbar-collapser');
