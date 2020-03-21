@@ -139,6 +139,7 @@
         lastScrollTop = st;
     };
     $(document).scroll(scrollRespond);
+    $(document).scrollend(scrollRespond);
     console.log('scroll ready');
 })(jQuery);
 
