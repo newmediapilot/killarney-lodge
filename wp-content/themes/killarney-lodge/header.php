@@ -41,6 +41,11 @@
 <body
 <?php body_class(); ?>>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KM8M8QH"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <?php include 'top-nav-menu.php'; ?>
 
 <!-- end header.php -->
