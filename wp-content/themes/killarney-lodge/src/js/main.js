@@ -136,17 +136,23 @@
          *
          */
         console.log('isDown', isDown, 'isUppest', isUppest);
-        if (isDown || !isUppest) {
+        /**
+         * scrolling down
+         */
+        if (isDown && !isUppest) {
             scrollTarget.css({top: 0 - scrollTarget.outerHeight()});
-            /**
-             * collapse menu
-             */
-            if (menuTrigger.prop("checked")) {
-                menuTrigger.prop("checked", false);
-            }
-        } else {
+        }
+        /**
+         * scrolling up
+         */
+        if (!isDown || isUppest) {
             scrollTarget.css({top: 0});
         }
+
+        if (menuTrigger.prop("checked")) {
+            menuTrigger.prop("checked", false);
+        }
+
         lastScrollTop = st;
     };
     $(document).scroll(scrollRespond);
