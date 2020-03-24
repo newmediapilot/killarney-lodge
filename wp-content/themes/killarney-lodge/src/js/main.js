@@ -114,21 +114,28 @@
  * menu collapse mobile
  */
 (function ($) {
-    var minWidth = $(window).width();
-    if (minWidth > 820) {
+    /**
+     * don't run this on wide browsers
+     */
+    if ($(window).width() > 820) {
         console.log('scroll ready... not mobile - cancelling function');
         return;
     }
+    /**
+     * vars
+     */
     var lastScrollTop = 0;
     var menuTrigger = $('#mobile-trigger');
     var scrollTarget = $('#kl-navbar-collapser');
+
     var scrollRespond = function (evt) {
         var st = $(this).scrollTop();
         var isDown = st > lastScrollTop;
         var isUppest = st <= scrollTarget.outerHeight();
         /**
-         * 
+         *
          */
+        console.log('isDown', isDown, 'isUppest', isUppest);
         if (isDown || isUppest) {
             scrollTarget.css({top: 0 - scrollTarget.outerHeight()});
             /**
@@ -143,7 +150,7 @@
         lastScrollTop = st;
     };
     $(document).scroll(scrollRespond);
-    $(document).scrollend(scrollRespond);
+    $(document).on('touchend', scrollRespond);
     console.log('scroll ready');
 })(jQuery);
 
