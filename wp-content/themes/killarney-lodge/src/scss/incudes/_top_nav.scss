@@ -52,6 +52,12 @@ $nav-height-desktop: 5rem;
   }
 
   .kl-navbar-wrapper {
+
+    /**
+    don't scroll when this is touched
+     */
+    touch-action: none;
+
     background-color: rgba(0, 0, 0, .60);
     padding: $spacer/2;
     width: 100%;
