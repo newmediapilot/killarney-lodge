@@ -136,7 +136,7 @@
          *
          */
         console.log('isDown', isDown, 'isUppest', isUppest);
-        if (isDown || isUppest) {
+        if (isDown || !isUppest) {
             scrollTarget.css({top: 0 - scrollTarget.outerHeight()});
             /**
              * collapse menu
