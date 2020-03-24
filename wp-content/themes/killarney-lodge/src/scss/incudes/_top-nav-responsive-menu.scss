@@ -67,7 +67,7 @@ end mobile trigger mechanism
       margin-top: 2px;
       flex-direction: column;
       box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.35);
-      font-size: 12px;
+      font-size: 16px;
     }
 
     .menu-main-items {
@@ -106,7 +106,7 @@ end mobile trigger mechanism
           visibility: hidden;
           display: none;
           position: absolute;
-          padding: $nav-bar-spacer/2;
+          padding: 4px 8px;
           right: 0;
           top: 0;
           z-index: 1;
