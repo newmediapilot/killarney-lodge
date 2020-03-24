@@ -129,6 +129,11 @@
     var scrollTarget = $('#kl-navbar-collapser');
 
     var scrollRespond = function (evt) {
+
+        if(menuTrigger.prop("checked")){
+            return;// do nothing if menu is open!
+        }
+
         var st = $(this).scrollTop();
         var isDown = st > lastScrollTop;
         var isUppest = st <= scrollTarget.outerHeight();
