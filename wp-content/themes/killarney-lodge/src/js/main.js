@@ -125,7 +125,11 @@
     var scrollRespond = function (evt) {
         var st = $(this).scrollTop();
         var isDown = st > lastScrollTop;
-        if (isDown) {
+        var isUppest = st <= scrollTarget.outerHeight();
+        /**
+         * 
+         */
+        if (isDown || isUppest) {
             scrollTarget.css({top: 0 - scrollTarget.outerHeight()});
             /**
              * collapse menu
