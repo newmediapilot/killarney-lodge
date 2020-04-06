@@ -229,6 +229,45 @@ hovers for link images only
   }
 }
 
+/**
+special annoucement scss
+ */
+.kl-announcement {
+  background-color: #f1f6fa;
+
+  p, .wp-block-image {
+    margin: 0;
+  }
+
+  p {
+    font-family: serif;
+    font-weight: bold;
+    color: #4f6e0f;
+    font-size: 19px;
+    line-height: 19px;
+    letter-spacing: 1px;
+  }
+
+  .wp-block-image {
+    text-align: center;
+  }
+
+  /**
+  special paragraph with custom breaks
+   */
+  @media (max-width: 992px) {
+    text-align: left;
+    br {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  padding-top: $spacer;
+  padding-bottom: $spacer;
+  margin-bottom: $spacer;
+}
+
 .footer-credits {
   padding: $spacer;
   font-size: 12px;
