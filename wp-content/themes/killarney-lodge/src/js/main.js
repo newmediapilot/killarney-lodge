@@ -173,11 +173,11 @@
         return;
     }
     $('#modalTopView').on('show.bs.modal', function (evt) {
-        var ratio = 560/315;
+        var ratio = 560 / 315;
         var video = $(evt.relatedTarget).data('video');
         var source = "https://www.youtube.com/embed/" + video + '?&autoplay=1';
         $('#gallery-video-youtube-id').attr('src', source)
-        .attr('src', source);
+            .attr('src', source);
         console.log('play youtube video...', source);
     }).on('hide.bs.modal', function (evt) {
         $('#gallery-video-youtube-id').attr('src', '');
@@ -191,7 +191,10 @@
         console.log('play mp4 video...', video);
 
     }).on('hide.bs.modal', function (evt) {
-        $('#gallery-video-mp4-id source').attr('src', '');
+        var player = $('#gallery-video-mp4-id')[0];
+        player.pause();
+        player.src = video;
+        player.load();
     });
     console.log('gallery-video functionality ready...');
 })(jQuery);
