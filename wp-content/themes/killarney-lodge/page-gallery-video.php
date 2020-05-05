@@ -64,11 +64,16 @@ foreach ($blocks as $item) {
     <div class="modal fade" id="modalTopView" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div id="video-youtube-container">
-                    <iframe id="gallery-video-youtube-id"
-                            width="560" height="315" src="" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                <div class="modal-body">
+                    <div id="video-youtube-container">
+                        <iframe id="gallery-video-youtube-id"
+                                width="560" height="315" src="" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -79,11 +84,16 @@ foreach ($blocks as $item) {
     <div class="modal fade" id="modalBotView" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <video id="gallery-video-mp4-id"
-                       width="100%" height="100%" controls autoplay="autoplay">
-                    <source src="" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <div class="modal-body">
+                    <video id="gallery-video-mp4-id"
+                           width="100%" height="100%" controls autoplay="autoplay">
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
