@@ -193,7 +193,7 @@
     }).on('hide.bs.modal', function (evt) {
         var player = $('#gallery-video-mp4-id')[0];
         player.pause();
-        player.src = video;
+        player.src = '';
         player.load();
     });
     console.log('gallery-video functionality ready...');
