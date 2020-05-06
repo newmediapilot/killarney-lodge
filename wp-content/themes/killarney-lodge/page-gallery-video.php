@@ -62,7 +62,7 @@ foreach ($blocks as $item) {
 
     <!-- /begin Modal for YouTube-->
     <div class="modal fade" id="modalTopView" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-rect" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <div id="video-youtube-container">
@@ -82,7 +82,7 @@ foreach ($blocks as $item) {
 
     <!-- /begin Modal for MP4-->
     <div class="modal fade" id="modalBotView" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-square" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <video id="gallery-video-mp4-id"
