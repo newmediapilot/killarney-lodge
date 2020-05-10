@@ -130,38 +130,39 @@
 
     var scrollRespond = function (evt) {
 
+        console.log("scrollRespond Interval");
+
         if (menuTrigger.prop("checked")) {
             return;// do nothing if menu is open!
         }
 
-        var st = $(this).scrollTop();
-        var isDown = st > lastScrollTop;
-        var isUppest = st <= scrollTarget.outerHeight();
+        var scrollTop = $(this).scrollTop();
+        var isDown = scrollTop > lastScrollTop;
+        var isEqual = scrollTop === lastScrollTop;
+
+        console.log('isEqual', isEqual, 'isDown', isDown);
+
         /**
-         *
+         * scrolling down/up
          */
-        console.log('isDown', isDown, 'isUppest', isUppest);
-        /**
-         * scrolling down
-         */
-        if (isDown && !isUppest) {
-            scrollTarget.css({top: 0 - scrollTarget.outerHeight()});
-        }
-        /**
-         * scrolling up
-         */
-        if (!isDown || isUppest) {
-            scrollTarget.css({top: 0});
+        if (!isEqual) {
+            if (isDown) {
+                scrollTarget.css({top: 0 - scrollTarget.outerHeight()});
+            } else {
+                scrollTarget.css({top: 0});
+            }
         }
 
+        /**
+         * hide menu contents when scrolling
+         */
         if (menuTrigger.prop("checked")) {
             menuTrigger.prop("checked", false);
         }
 
-        lastScrollTop = st;
+        lastScrollTop = scrollTop;
     };
-    $(document).scroll(scrollRespond);
-    $(document).on('touchend', scrollRespond);
+    setInterval(scrollRespond, 250);
     console.log('scroll ready');
 })(jQuery);
 
