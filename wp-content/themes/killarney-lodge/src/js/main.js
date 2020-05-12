@@ -137,18 +137,25 @@
         }
 
         var scrollTop = $(this).scrollTop();
-        var isDown = scrollTop > lastScrollTop;
-        var isEqual = scrollTop === lastScrollTop;
+        var isScrollingDown = scrollTop > lastScrollTop;
+        var isScrolledTopmost = scrollTop <= scrollTarget.outerHeight();
+        var isNotScrolling = scrollTop === lastScrollTop;
 
-        console.log('isEqual', isEqual, 'isDown', isDown);
+        console.log('isScrolledTopmost', isScrolledTopmost, 'isNotScrolling', isNotScrolling, 'isScrollingDown', isScrollingDown);
 
         /**
          * scrolling down/up
          */
-        if (!isEqual) {
-            if (isDown) {
+        if (!isNotScrolling) {
+            if (isScrollingDown && !isScrolledTopmost) {
                 scrollTarget.css({top: 0 - scrollTarget.outerHeight()});
+            } else if (isScrolledTopmost) {
+                scrollTarget.css({top: 0});
             } else {
+                scrollTarget.css({top: 0});
+            }
+        } else {
+            if (isScrolledTopmost) {
                 scrollTarget.css({top: 0});
             }
         }
