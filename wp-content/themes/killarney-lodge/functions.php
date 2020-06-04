@@ -29,7 +29,7 @@ function add_meta_tags()
 
 function add_link_tags()
 {
-    echo '<link rel="icon" href="/wp-content/themes/framework-lodge/res/favicon.ico">';
+    echo '<link rel="icon" href="/wp-content/themes/killarney-lodge/res/favicon.ico">';
 }
 
 add_action('wp_head', 'add_meta_tags');
