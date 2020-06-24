@@ -76,9 +76,7 @@ foreach ($footer_menu_parents as $menu_item_parent) {
                     <div class="kl-footer--list col-6 col-md-2 col-lg-2 col-xl-auto">
                         <ul>
                             <li>
-                                <a href="<?php echo $footer_menu_parent->url ?>"
-                                   target="<?php echo $footer_menu_parent->target ?>"
-                                   title="<?php echo $footer_menu_parent->title ?>"><?php echo $footer_menu_parent->title ?></a>
+                                <span><?php echo $footer_menu_parent->title ?></span>
                             </li>
                             <?php foreach ($footer_menu_parent->menu_item_children as $menu_child) { ?>
                                 <li>
