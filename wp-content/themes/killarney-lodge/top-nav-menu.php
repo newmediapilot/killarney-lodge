@@ -42,12 +42,9 @@ foreach ($main_menu_parents as $menu_item_parent) {
                         <?php foreach ($main_menu_parents as $main_menu_parent) { ?>
                             <ul class="menu-main-items">
                                 <li class="menu-main-item">
-                                    <a href="<?php echo $main_menu_parent->url ?>"
-                                       target="<?php echo $main_menu_parent->target ?>"
-                                       title="<?php echo $main_menu_parent->title ?>"
-                                       class="menu-sub-item-link">
+                                    <span class="menu-sub-item-link">
                                         <?php echo $main_menu_parent->title ?>
-                                    </a>
+                                    </span>
                                     <?php if (!empty($main_menu_parent->menu_item_children)) { ?>
                                         <!-- trigger -->
                                         <label for="sub-item-trigger-<?php echo $main_menu_parent->ID ?>"

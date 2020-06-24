@@ -94,6 +94,7 @@ end mobile trigger mechanism
           color: white;
           display: inline-block;
           width: 100%;
+          user-select: none;
           @media (max-width: $nav-mobile-breakpoint) {
             color: black;
             background-color: white;
