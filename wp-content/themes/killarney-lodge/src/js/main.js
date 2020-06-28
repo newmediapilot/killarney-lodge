@@ -180,30 +180,53 @@
     if (!document.$post.$post_name === 'gallery-video') {// @see header.php
         return;
     }
+    // #modalFeaView
+    // #modalFeaView
+    // #modalFeaView
+    $('#modalFeaView').on('show.bs.modal', function (evt) {
+        var video = $(evt.relatedTarget).data('video');
+        var player = $('#gallery-video-fea-id')[0];
+        player.src = video;
+        player.load();
+        player.play();
+        console.log('play #modalFeaView video...', video);
+    }).on('hide.bs.modal', function (evt) {
+        var player = $('#gallery-video-fea-id')[0];
+        player.pause();
+        player.src = '';
+        player.load();
+    });
+    //
+    // #modalTopView
+    // #modalTopView
+    // #modalTopView
     $('#modalTopView').on('show.bs.modal', function (evt) {
         var ratio = 560 / 315;
         var video = $(evt.relatedTarget).data('video');
         var source = "https://www.youtube.com/embed/" + video + '?&autoplay=1';
         $('#gallery-video-youtube-id').attr('src', source)
             .attr('src', source);
-        console.log('play youtube video...', source);
+        console.log('play #modalTopView video...', source);
     }).on('hide.bs.modal', function (evt) {
         $('#gallery-video-youtube-id').attr('src', '');
     });
+    // #modalBotView
+    // #modalBotView
+    // #modalBotView
     $('#modalBotView').on('show.bs.modal', function (evt) {
         var video = $(evt.relatedTarget).data('video');
         var player = $('#gallery-video-mp4-id')[0];
         player.src = video;
         player.load();
         player.play();
-        console.log('play mp4 video...', video);
-
+        console.log('play #modalBotView video...', video);
     }).on('hide.bs.modal', function (evt) {
         var player = $('#gallery-video-mp4-id')[0];
         player.pause();
         player.src = '';
         player.load();
     });
+    //
     console.log('gallery-video functionality ready...');
 })(jQuery);
 
