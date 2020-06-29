@@ -226,7 +226,20 @@
         player.src = '';
         player.load();
     });
-    //
+    // 1. Find the element matching the query param video=
+    // 2. If found target this element
+    // 3. Click the element
+    // NOTE: This only works if the user clicked on the website from another page
+    // Browsers do not allow auto-play without explicit user interaction
+    if (document.$queryParams) {
+        if (document.$queryParams.video) {
+            setTimeout(function () {
+                var video = document.$queryParams.video;
+                var target = $(`[data-post-title="${document.$queryParams.video}"]`);
+                target.click();
+            }, 1000);
+        }
+    }
     console.log('gallery-video functionality ready...');
 })(jQuery);
 
