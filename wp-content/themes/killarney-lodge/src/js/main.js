@@ -181,8 +181,7 @@
         return;
     }
     // #modalFeaView
-    // #modalFeaView
-    // #modalFeaView
+    // Horizontal MP4 video modals
     $('#modalFeaView').on('show.bs.modal', function (evt) {
         var video = $(evt.relatedTarget).data('video');
         var player = $('#gallery-video-fea-id')[0];
@@ -196,10 +195,8 @@
         player.src = '';
         player.load();
     });
-    //
     // #modalTopView
-    // #modalTopView
-    // #modalTopView
+    // Horizontal YouTube video modals
     $('#modalTopView').on('show.bs.modal', function (evt) {
         var ratio = 560 / 315;
         var video = $(evt.relatedTarget).data('video');
@@ -211,8 +208,7 @@
         $('#gallery-video-youtube-id').attr('src', '');
     });
     // #modalBotView
-    // #modalBotView
-    // #modalBotView
+    // Square 1:1 MP4 video modals
     $('#modalBotView').on('show.bs.modal', function (evt) {
         var video = $(evt.relatedTarget).data('video');
         var player = $('#gallery-video-mp4-id')[0];
