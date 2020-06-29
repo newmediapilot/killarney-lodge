@@ -51,12 +51,29 @@
     <meta name="google-site-verification" content="so449KYFdOh_OZf8ozeAh8EzRjMk_7TytnqJSflfdSo">
     <meta name="msvalidate.01" content="EAFD37E14DE2FB4983342380ACF67CFA">
     <link href="https://plus.google.com/102884272161556376079" rel="publisher">
-    <!-- etc -->
+    <!-- psat info -->
     <script type="text/javascript">
         (function () {
             document.$post = {
                 $post_name: '<?php echo $post->post_name ?>'
             };
+        })();
+    </script>
+    <!-- query params -->
+    <script type="text/javascript">
+        (function () {
+            <?php
+            $requestURI = $_SERVER["REQUEST_URI"];
+            $parseURL = parse_url($requestURI);
+            $query = '';
+            $queryParams = '';
+            if (array_key_exists("query", $parseURL)) {
+                $query = $parseURL["query"];
+                parse_str($query, $queryParams);
+            }
+            ?>
+            document.$requestURI = '<?php echo $requestURI ?>';
+            document.$queryParams = <?php echo json_encode($queryParams) ?>;
         })();
     </script>
 </head>
