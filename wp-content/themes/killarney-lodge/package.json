@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo hello",
     "start": "gulp watch",
-    "deploy": "git stash; git fetch; git pull; gulp"
+    "deploy": "git stash; git fetch; git pull; gulp",
+    "chmod:lock": "sudo find /home/bitnami/apps/wordpress/htdocs -type f -exec chmod 755 {};sudo find /home/bitnami/apps/wordpress/htdocs -type d -exec chmod 755 {};",
+    "chmod:unlock": "sudo find /home/bitnami/apps/wordpress/htdocs -type f -exec chmod 777 {};sudo find /home/bitnami/apps/wordpress/htdocs -type d -exec chmod 777 {};"
   },
   "browserslist": [
     "Explorer >= 10",
