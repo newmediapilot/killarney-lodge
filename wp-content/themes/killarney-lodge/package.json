@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo hello",
     "start": "gulp watch",
-    "deploy": "git fetch; git pull; gulp"
+    "deploy": "git stash; git fetch; git pull; gulp"
   },
   "browserslist": [
     "Explorer >= 10",
