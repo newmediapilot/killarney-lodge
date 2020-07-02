@@ -1,7 +1,13 @@
 wp-config.php
 .idea/
+.well-known/
+wp-config-sample.php
 wp-admin/
 wp-includes/
+wp-content/.htaccess
+wp-content/aiowps_backups/
+wp-content/shield/
+wp-content/updraft/
 wp-content/cache/
 wp-content/plugins/
 wp-content/uploads/
@@ -9,5 +15,4 @@ wp-content/themes/
 !wp-content/themes/killarney-lodge/
 wp-content/themes/killarney-lodge/node_modules/
 wp-content/themes/killarney-lodge/dist/
-
 wp-content/themes/php-info.php
