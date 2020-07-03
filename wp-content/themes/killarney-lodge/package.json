@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo hello",
     "start": "gulp watch",
+<<<<<<< HEAD
     "deploy": "git stash; git fetch; git pull; gulp",
     "chmod:unlock:f": "sudo find /home/bitnami/apps/wordpress/htdocs -type f -exec chmod 777 {}",
     "chmod:unlock:d": "sudo find /home/bitnami/apps/wordpress/htdocs -type d -exec chmod 777 {}",
@@ -13,6 +14,9 @@
     "chmod:lock:f": "sudo find /home/bitnami/apps/wordpress/htdocs -type f -exec chmod 755 {}",
     "chmod:lock:d": "sudo find /home/bitnami/apps/wordpress/htdocs -type d -exec chmod 755 {}",
     "chmod:lock": "npm run chmod:lock:d; npm run chmod:lock:f"
+=======
+    "deploy": "git fetch; git pull; gulp"
+>>>>>>> ead6b3b6d50c451786fedf4ab15bdb4355b76224
   },
   "browserslist": [
     "Explorer >= 10",
