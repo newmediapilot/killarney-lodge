@@ -7,8 +7,12 @@
     "test": "echo hello",
     "start": "gulp watch",
     "deploy": "git stash; git fetch; git pull; gulp",
-    "chmod:lock": "sudo find /home/bitnami/apps/wordpress/htdocs -type f -exec chmod 755 {};sudo find /home/bitnami/apps/wordpress/htdocs -type d -exec chmod 755 {};",
-    "chmod:unlock": "sudo find /home/bitnami/apps/wordpress/htdocs -type f -exec chmod 777 {};sudo find /home/bitnami/apps/wordpress/htdocs -type d -exec chmod 777 {};"
+    "chmod:unlock:f": "sudo find /home/bitnami/apps/wordpress/htdocs -type f -exec chmod 777 {}",
+    "chmod:unlock:d": "sudo find /home/bitnami/apps/wordpress/htdocs -type d -exec chmod 777 {}",
+    "chmod:unlock": "npm run chmod:unlock:d; npm run chmod:unlock:f",
+    "chmod:lock:f": "sudo find /home/bitnami/apps/wordpress/htdocs -type f -exec chmod 755 {}",
+    "chmod:lock:d": "sudo find /home/bitnami/apps/wordpress/htdocs -type d -exec chmod 755 {}",
+    "chmod:lock": "npm run chmod:lock:d; npm run chmod:lock:f"
   },
   "browserslist": [
     "Explorer >= 10",
