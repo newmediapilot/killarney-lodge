@@ -30,20 +30,6 @@ foreach ($blocks as $item) {
              aria-hidden="true"
              src="/wp-content/themes/killarney-lodge/res/relaxExploreEnjoy.png">
     </div><!-- /end gallery-slogan -->
-    <div class="gallery-feature">
-        <div class="container">
-            <div class="row">
-                <?php foreach ($blocks_fea as $child) { ?>
-                    <div data-toggle="modal" data-target="#modalFeaView"
-                         data-post-title="<?php echo $child->post_title; ?>"
-                         data-video="<?php echo(get_metadata('post', $child->ID, 'video', true)); ?>"
-                         class="<?php echo(get_metadata('post', $child->ID, 'className', true)); ?>">
-                        <?php echo $child->post_content; ?>
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
-    </div><!-- /end gallery-feature -->
     <div class="gallery-youtube">
         <div class="container">
             <div class="row">
@@ -58,6 +44,20 @@ foreach ($blocks as $item) {
             </div>
         </div>
     </div><!-- /end gallery-youtube -->
+    <div class="gallery-feature">
+        <div class="container">
+            <div class="row">
+                <?php foreach ($blocks_fea as $child) { ?>
+                    <div data-toggle="modal" data-target="#modalFeaView"
+                         data-post-title="<?php echo $child->post_title; ?>"
+                         data-video="<?php echo(get_metadata('post', $child->ID, 'video', true)); ?>"
+                         class="<?php echo(get_metadata('post', $child->ID, 'className', true)); ?>">
+                        <?php echo $child->post_content; ?>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+    </div><!-- /end gallery-feature -->
     <div class="gallery-tagline">
         <img title="Peaceful Moments at Killarney Lodge Imagine... Be There"
              aria-hidden="true"
