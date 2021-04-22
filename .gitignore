@@ -12,6 +12,7 @@ wp-content/cache/
 wp-content/plugins/
 wp-content/uploads/
 wp-content/themes/
+wp-content/wp-admin/
 !wp-content/themes/killarney-lodge/
 wp-content/themes/killarney-lodge/node_modules/
 wp-content/themes/killarney-lodge/dist/
